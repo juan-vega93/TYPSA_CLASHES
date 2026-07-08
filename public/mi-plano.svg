@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000">
+  <defs>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#ddd" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+  <g fill="#000" font-size="48" font-family="Arial">
+    <text x="50" y="80">Plano (reemplaza este archivo por tu imagen raster en public/mi-plano.svg)</text>
+  </g>
+  <g stroke="#000" stroke-width="2" fill="none">
+    <rect x="200" y="200" width="1600" height="1200" />
+    <text x="220" y="260" fill="#000" font-size="36">Edificio A</text>
+    <text x="220" y="320" fill="#000" font-size="36">Edificio B</text>
+  </g>
+</svg>

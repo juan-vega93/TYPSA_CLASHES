@@ -1,0 +1,2845 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="P1_ISA-EQM" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="822083585">
+            <locator>lcop_selection_set_tree/Disciplinas/ISA</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="1191182337">
+            <locator>lcop_selection_set_tree/Disciplinas/EQM</locator>
+          </clashselection>
+        </right>
+        <rules/>
+        <clashresults>
+          <clashresult name="Clash19" guid="f2a2962f-e904-4157-8b4e-2b34cac995a4" status="new" distance="-0.018">
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="229789.151" y="8183558.532" z="2328.198"/>
+            </clashpoint>
+            <gridlocation>J-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="22" minute="16" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701410</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>16691495</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-46_SillónMetálicoSemiconfortableSinPortabrazosUnipersonal</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash1" guid="0372ed44-2af1-43ef-aa11-34f40589f579" status="active" distance="-0.032">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229777.822" y="8183522.129" z="2349.995"/>
+            </clashpoint>
+            <gridlocation>F-5 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1365204</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>0.203 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>0.012 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Tuberías</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13099325</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-104-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-36_SillaMetálicaApilable</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPS RESIDENCIA PARA PERSONAL</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Equipamiento médico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash4" guid="9f6b1799-962a-4d5f-93c8-8514dc03d493" status="active" distance="-0.023">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229721.983" y="8183598.137" z="2328.279"/>
+            </clashpoint>
+            <gridlocation>F-16 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1703897</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15784674</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-1_ArchivadorMetálicoDe4Gavetas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS NUTRICIÓN Y DIETETICA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SECRETARÍA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>NUT-124</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash6" guid="53d7a953-5e2f-4141-80d1-06e4dabac721" status="active" distance="-0.008">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229777.807" y="8183522.134" z="2349.925"/>
+            </clashpoint>
+            <gridlocation>F-5 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1365204</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>0.203 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>0.012 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Tuberías</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13099325</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-104-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-36_SillaMetálicaApilable</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPS RESIDENCIA PARA PERSONAL</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Equipamiento médico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash7" guid="c0164255-ec11-45ca-9496-96877147f95c" status="active" distance="0.004">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229780.525" y="8183553.421" z="2328.277"/>
+            </clashpoint>
+            <gridlocation>H-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701496</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15960182</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>D-109_CocheDeParoEquipado</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ESTACIÓN DE ENFERMERÍA PEDIÁTRICA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-187</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash9" guid="fe8eb503-9e8d-45c4-ae9e-d0f0053e1505" status="active" distance="0.010">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229827.993" y="8183547.366" z="2336.963"/>
+            </clashpoint>
+            <gridlocation>N-4 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>665794</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>43.473 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>10.407 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N02</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE DÍA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>CE-231</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Tuberías</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15748490</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>T-16_TelevisorLedSmartTvDe42&quot;Aprox.Inc.Rack</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N02</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ADMISIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>CE-225</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash10" guid="47aeaee0-eefe-49c3-8876-d796422e270a" status="active" distance="0.010">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229824.913" y="8183551.933" z="2336.963"/>
+            </clashpoint>
+            <gridlocation>N-5 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>665794</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>43.473 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>10.407 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N02</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE DÍA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>CE-231</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Tuberías</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15748519</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>T-16_TelevisorLedSmartTvDe42&quot;Aprox.Inc.Rack</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N02</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ADMISIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>CE-225</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash11" guid="b7cb0db7-142f-4957-96c7-dc9ff8579219" status="active" distance="0.013">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229784.668" y="8183556.231" z="2328.270"/>
+            </clashpoint>
+            <gridlocation>I-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701480</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15698050</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-96_MesaMetálicaDeNoche</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE OBSERVACIÓN ADULTOS MUJERES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-114</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash12" guid="a05e1b98-d366-4c18-9993-a1e6fc49bff0" status="active" distance="0.013">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229760.206" y="8183599.569" z="2328.214"/>
+            </clashpoint>
+            <gridlocation>I-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1704044</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14864088</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-36_SillaMetálicaApilable</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>CONSULTORIO DE RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>RAD-101</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash13" guid="6a55b31c-fb52-4537-8cac-eca09272bf4a" status="active" distance="0.018">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229782.589" y="8183554.827" z="2328.308"/>
+            </clashpoint>
+            <gridlocation>I-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701488</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15697934</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-96_MesaMetálicaDeNoche</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE OBSERVACIÓN ADULTOS MUJERES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-114</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash15" guid="04445ebb-502c-481a-85e3-0706831c535b" status="active" distance="0.019">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229777.828" y="8183522.135" z="2350.027"/>
+            </clashpoint>
+            <gridlocation>F-5 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1365617</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>CODO_ACEROINOXIDABLE-304</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13099325</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-104-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-36_SillaMetálicaApilable</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPS RESIDENCIA PARA PERSONAL</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Equipamiento médico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash16" guid="36f334c1-dcb5-479e-bc98-a973d17f5b59" status="active" distance="0.023">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229761.815" y="8183599.082" z="2328.214"/>
+            </clashpoint>
+            <gridlocation>J-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1703307</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14864153</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>D-325_BalanzaDigitalConTallímetroAdulto</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>CONSULTORIO DE RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>RAD-101</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash17" guid="f816f93a-0b7f-4c56-a322-44a41d0525b3" status="active" distance="0.023">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229761.815" y="8183599.083" z="2328.239"/>
+            </clashpoint>
+            <gridlocation>J-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1703307</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14864153</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>D-325_BalanzaDigitalConTallímetroAdulto</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>CONSULTORIO DE RADIOTERAPIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>RAD-101</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash18" guid="d7ca66ab-fb2e-4cce-a062-ab93757a08e5" status="active" distance="0.024">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229778.458" y="8183552.032" z="2328.320"/>
+            </clashpoint>
+            <gridlocation>H-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701506</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15960181</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-67_CarroParaTransporteDeDosisUnitaria</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ESTACIÓN DE ENFERMERÍA PEDIÁTRICA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-187</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash2" guid="948fe325-1539-4934-868d-97334fba8591" status="resolved" distance="-0.026">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229795.035" y="8183563.207" z="2328.258"/>
+            </clashpoint>
+            <gridlocation>J-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701331</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="dbb03ac7-98db-40d7-afa3-ddba7c08a688" status="resolved" distance="-0.026">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229788.817" y="8183559.014" z="2328.258"/>
+            </clashpoint>
+            <gridlocation>J-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701410</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash5" guid="1714b9e5-67bf-41e5-8134-5d0075d0e7d3" status="resolved" distance="-0.009">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229771.540" y="8183558.101" z="2328.246"/>
+            </clashpoint>
+            <gridlocation>H-9 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1702152</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15960971</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-117_PortabolsaMetálicaRodable,ConBolsaDeLona</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash8" guid="c41a83d3-a9ce-4648-8af0-3d54ff99c316" status="resolved" distance="0.010">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229773.414" y="8183556.353" z="2328.168"/>
+            </clashpoint>
+            <gridlocation>H-9 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701875</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15703012</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-108_VeladorMetálico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE OBSERVACIÓN AISLADO</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-117</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash14" guid="a1ca4a7b-7949-43fb-ab49-28952e2650b8" status="resolved" distance="0.019">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229773.411" y="8183556.350" z="2328.308"/>
+            </clashpoint>
+            <gridlocation>H-9 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="9" second="50"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1701875</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISA-E3-100100</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipe Accessories</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>ST1_AccesoriosDeTuberias_ColgadorTipoRiel</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>NS1</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalación sanitaria de agua</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Accesorios de tuberías MEP</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>15703012</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-106-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-108_VeladorMetálico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE ABC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS EMERGENCIA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>SALA DE OBSERVACIÓN AISLADO</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>EMG-117</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Equipos especializados</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>
