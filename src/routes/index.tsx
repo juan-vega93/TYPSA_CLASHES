@@ -116,7 +116,7 @@ export function Index() {
               className="h-12 w-12 rounded-md object-cover shadow-[var(--shadow-soft)]"
             />
             <div>
-              <h1 className="text-xl font-bold tracking-tight text-[#c8102e]">IREN SUR</h1>
+              <h1 className="text-xl font-bold tracking-tight text-[#c8102e]">AR3173-IREN SUR</h1>
               <p className="text-xs text-muted-foreground">
                 Dashboard de gestion de clashes - {clashes.length} clashes cargados
                 {isLoading || isParsing ? " - procesando XML" : ""}
