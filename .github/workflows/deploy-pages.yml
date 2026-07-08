@@ -30,15 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build static Pages app
+        run: npm run build:pages
         env:
           GITHUB_PAGES: "true"
 
-      - name: Create static Pages entry
-        run: node scripts/create-pages-index.mjs
-        env:
-          GITHUB_PAGES: "true"
+      - name: Add Pages SPA fallbacks
+        run: |
+          cp dist-pages/index.html dist-pages/404.html
+          touch dist-pages/.nojekyll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -46,7 +46,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .output/public
+          path: dist-pages
 
   deploy:
     runs-on: ubuntu-latest

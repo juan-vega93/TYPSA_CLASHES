@@ -77,7 +77,7 @@ function LoadingPanel() {
   );
 }
 
-function Index() {
+export function Index() {
   const { clashes, snapshots, ingestFiles, clearExtras, hasExtras, isLoading, isParsing, errors } = useClashes();
   const { data: state, update, reset } = useClashState();
   const [filters, setFilters] = useState<FilterState>({});
