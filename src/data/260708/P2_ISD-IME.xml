@@ -6,12 +6,12 @@
       <clashtest name="P2_ISD-IME" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ISD</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/IME</locator>
           </clashselection>
         </right>
@@ -83,7 +83,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -395,7 +395,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -551,7 +551,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -863,7 +863,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -4139,7 +4139,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>

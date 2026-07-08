@@ -6,12 +6,12 @@
       <clashtest name="P2_EST-COM" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EST</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/COM</locator>
           </clashselection>
         </right>
@@ -507,11 +507,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -663,11 +663,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -819,11 +819,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -2516,7 +2516,7 @@
           <clashresult name="Clash17" guid="0295c9da-d918-4302-90f4-89796c26293c" status="active" distance="-0.250">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229749.142" y="8183639.754" z="2326.768"/>
+              <pos3f x="229749.954" y="8183640.249" z="2326.768"/>
             </clashpoint>
             <gridlocation>K-19 : NS2</gridlocation>
             <createddate>
@@ -8132,7 +8132,7 @@
           <clashresult name="Clash51" guid="82305b2f-4f1c-478b-ab93-c7d27363e20e" status="active" distance="-0.099">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229851.088" y="8183547.034" z="2328.118"/>
+              <pos3f x="229851.088" y="8183547.034" z="2327.868"/>
             </clashpoint>
             <gridlocation>P-2 : NS2</gridlocation>
             <createddate>
@@ -8151,11 +8151,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>3192.166 m²</value>
+                    <value>3205.847 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>798.042 m³</value>
+                    <value>801.462 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>

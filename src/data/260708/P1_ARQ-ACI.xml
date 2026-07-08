@@ -6,485 +6,17 @@
       <clashtest name="P1_ARQ-ACI" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ARQ</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ACI</locator>
           </clashselection>
         </right>
         <rules/>
         <clashresults>
-          <clashresult name="Clash58" guid="1e5a9de9-3490-47c9-a6e2-91cdb734578b" status="new" distance="-0.127">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229778.752" y="8183614.607" z="2347.155"/>
-            </clashpoint>
-            <gridlocation>M-14 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12802541</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>9.865 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>44.711 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>7.154 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N04</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CENTRO QUIRÚRGICO</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>1495908</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.071 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>1.300 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Pipes</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Pipe Types</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N04</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Agua contra incendio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>TuberiaACI</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash59" guid="a94daa61-64ec-4c16-8b64-b14cd0f1d37d" status="new" distance="-0.094">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229753.181" y="8183598.838" z="2378.899"/>
-            </clashpoint>
-            <gridlocation>I-14 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>13950923</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.804 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>24.117 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.859 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS HOSPITALIZACIÓN</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>1552331</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>12.165 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>3.883 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Pipes</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Pipe Types</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Agua contra incendio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>TuberiaACI</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash60" guid="a42021dc-cf43-4ffa-874a-7a433d3b7a19" status="new" distance="-0.086">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229745.898" y="8183606.395" z="2381.038"/>
-            </clashpoint>
-            <gridlocation>H-16 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>13757727</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>1982.917 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>99.146 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Floors</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Floor</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N10</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>AZOTEA</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>AZOTEA TÉCNICA</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>AZ-1001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>1552493</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>6.795 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>2.169 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Pipes</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Pipe Types</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Agua contra incendio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>TuberiaACI</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
           <clashresult name="Clash1" guid="7bf53044-2bd8-40fc-87ec-4b5c504aa13f" status="active" distance="-0.157">
             <resultstatus>Active</resultstatus>
             <clashpoint>
@@ -1072,6 +604,162 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Agua contra incendio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>TuberiaACI</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash58" guid="1e5a9de9-3490-47c9-a6e2-91cdb734578b" status="active" distance="-0.127">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229778.752" y="8183614.607" z="2347.155"/>
+            </clashpoint>
+            <gridlocation>M-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12802541</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>9.865 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>44.711 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>7.154 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CENTRO QUIRÚRGICO</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1495908</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.071 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>1.300 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -2164,6 +1852,318 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Agua contra incendio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>TuberiaACI</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash59" guid="a94daa61-64ec-4c16-8b64-b14cd0f1d37d" status="active" distance="-0.094">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229753.181" y="8183598.838" z="2378.899"/>
+            </clashpoint>
+            <gridlocation>I-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13950923</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.804 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>24.117 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.859 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS HOSPITALIZACIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1552331</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>12.165 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>3.883 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Agua contra incendio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>TuberiaACI</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash60" guid="a42021dc-cf43-4ffa-874a-7a433d3b7a19" status="active" distance="-0.086">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229745.898" y="8183606.395" z="2381.038"/>
+            </clashpoint>
+            <gridlocation>H-16 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="52"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13757727</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>1981.202 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>99.060 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Floors</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Floor</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N10</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>AZOTEA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>AZOTEA TÉCNICA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>AZ-1001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>1552493</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>6.795 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>2.169 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ACI-E3-100400</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -4856,7 +4856,7 @@
           <clashresult name="Clash32" guid="741801f5-5bf9-436d-ae7f-59bdc56aa7ea" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229807.872" y="8183581.607" z="2340.578"/>
+              <pos3f x="229807.872" y="8183581.607" z="2339.778"/>
             </clashpoint>
             <gridlocation>N-9 : NS2</gridlocation>
             <createddate>
@@ -5012,7 +5012,7 @@
           <clashresult name="Clash33" guid="4311b57d-842f-4474-afc0-74e04318888a" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229807.915" y="8183581.544" z="2340.578"/>
+              <pos3f x="229807.915" y="8183581.544" z="2339.778"/>
             </clashpoint>
             <gridlocation>N-9 : NS2</gridlocation>
             <createddate>
@@ -5168,7 +5168,7 @@
           <clashresult name="Clash34" guid="ac656cf8-028a-4741-802a-7bfe5f993d45" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229807.852" y="8183581.502" z="2340.578"/>
+              <pos3f x="229807.852" y="8183581.502" z="2339.782"/>
             </clashpoint>
             <gridlocation>N-9 : NS2</gridlocation>
             <createddate>
@@ -5636,7 +5636,7 @@
           <clashresult name="Clash37" guid="84e056f2-dcfd-4391-aa6c-c5eabf272cb7" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229822.231" y="8183554.511" z="2350.493"/>
+              <pos3f x="229822.231" y="8183554.511" z="2351.283"/>
             </clashpoint>
             <gridlocation>N-5 : NS2</gridlocation>
             <createddate>
@@ -5948,7 +5948,7 @@
           <clashresult name="Clash39" guid="b1079076-6b75-48cb-9feb-3fe74b32aba3" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229745.061" y="8183590.056" z="2345.591"/>
+              <pos3f x="229745.061" y="8183590.056" z="2345.776"/>
             </clashpoint>
             <gridlocation>G-14 : NS2</gridlocation>
             <createddate>
@@ -8307,11 +8307,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>1982.917 m²</value>
+                    <value>1981.202 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>99.146 m³</value>
+                    <value>99.060 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>

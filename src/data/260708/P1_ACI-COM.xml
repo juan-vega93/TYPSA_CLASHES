@@ -6,12 +6,12 @@
       <clashtest name="P1_ACI-COM" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ACI</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/COM</locator>
           </clashselection>
         </right>

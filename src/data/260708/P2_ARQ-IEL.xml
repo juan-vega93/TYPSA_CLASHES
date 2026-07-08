@@ -6,48 +6,48 @@
       <clashtest name="P2_ARQ-IEL" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ARQ</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/IEL</locator>
           </clashselection>
         </right>
         <rules/>
         <clashresults>
-          <clashresult name="Clash78" guid="9c3962ad-d0b5-41bb-9118-fc67e765d081" status="new" distance="-0.405">
+          <clashresult name="Clash83" guid="df2e4caa-b237-44a2-b5d6-44deb5a401b0" status="new" distance="-0.225">
             <resultstatus>New</resultstatus>
             <clashpoint>
-              <pos3f x="229767.905" y="8183550.369" z="2353.672"/>
+              <pos3f x="229739.348" y="8183593.587" z="2342.933"/>
             </clashpoint>
-            <gridlocation>G-8 : NS2</gridlocation>
+            <gridlocation>G-15 : NS2</gridlocation>
             <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+              <date year="2026" month="7" day="8" hour="23" minute="37" second="59"/>
             </createddate>
             <clashobjects>
               <clashobject>
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>12216611</value>
+                    <value>12386355</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>5.165 m</value>
+                    <value>2.075 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>19.978 m²</value>
+                    <value>10.354 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>3.196 m³</value>
+                    <value>1.657 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-104-YYY-MBM-ARQ-E3-000001</value>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Category</name>
@@ -59,391 +59,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Edificio</name>
-                    <value>BLOQUE B</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N05</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPS RESIDENCIA DE PERSONAL</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>23300766</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>30.780 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N05</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones Electricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash79" guid="d220e4b2-bb8e-40e6-9be1-28b9a5487194" status="new" distance="-0.145">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229809.600" y="8183597.340" z="2353.638"/>
-            </clashpoint>
-            <gridlocation>O-10 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12605636</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>6.130 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>27.478 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>4.397 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE A</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N04</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CONSULTA EXTERNA</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Muros</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>18952278</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>1.250 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N05</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones Electricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash80" guid="bf2a323a-ffda-4b84-8928-2341090a66e6" status="new" distance="-0.010">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229808.343" y="8183562.935" z="2342.816"/>
-            </clashpoint>
-            <gridlocation>L-7 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12292534</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>1.115 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>5.152 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>0.077 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE A</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CONSULTA EXTERNA</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Muros</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>18967503</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Tray Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>IEL_BDC_CurvaVerticalExterior-TipoRanurada</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
+                    <value>BLOQUE C</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Nivel</name>
@@ -451,91 +67,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones Electricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Cable Tray Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>und</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash81" guid="9e7af4f5-442e-4fd1-93a4-ee8d633887da" status="new" distance="-0.010">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229808.337" y="8183562.944" z="2338.828"/>
-            </clashpoint>
-            <gridlocation>L-7 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12292534</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>1.115 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>5.152 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>0.077 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE A</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CONSULTA EXTERNA</value>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Ambiente</name>
@@ -547,11 +79,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Especialidad</name>
-                    <value></value>
+                    <value>Arquitectura</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Muros</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -563,7 +95,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Unidad Medida N°01</name>
-                    <value></value>
+                    <value>m2</value>
                   </smarttag>
                 </smarttags>
               </clashobject>
@@ -571,11 +103,11 @@
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>18967502</value>
+                    <value>18721278</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>5.200 m</value>
+                    <value>7.311 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -623,7 +155,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Cable Trays</value>
+                    <value>Bandeja Electrica</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -641,37 +173,37 @@
               </clashobject>
             </clashobjects>
           </clashresult>
-          <clashresult name="Clash82" guid="198501bd-5f11-4c01-9d97-7bf530c58104" status="new" distance="-0.010">
+          <clashresult name="Clash84" guid="ce4918e9-2c70-4805-af07-56da61d24859" status="new" distance="-0.075">
             <resultstatus>New</resultstatus>
             <clashpoint>
-              <pos3f x="229808.343" y="8183562.935" z="2343.418"/>
+              <pos3f x="229739.370" y="8183593.333" z="2342.833"/>
             </clashpoint>
-            <gridlocation>L-7 : NS2</gridlocation>
+            <gridlocation>G-15 : NS2</gridlocation>
             <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+              <date year="2026" month="7" day="8" hour="23" minute="37" second="59"/>
             </createddate>
             <clashobjects>
               <clashobject>
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>12292534</value>
+                    <value>12386355</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>1.115 m</value>
+                    <value>2.075 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>5.152 m²</value>
+                    <value>10.354 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>0.077 m³</value>
+                    <value>1.657 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Category</name>
@@ -683,15 +215,15 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Edificio</name>
-                    <value>BLOQUE A</value>
+                    <value>BLOQUE C</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Nivel</name>
-                    <value></value>
+                    <value>N03</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
-                    <value>UPSS CONSULTA EXTERNA</value>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Ambiente</name>
@@ -703,11 +235,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Especialidad</name>
-                    <value></value>
+                    <value>Arquitectura</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Muros</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -719,7 +251,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Unidad Medida N°01</name>
-                    <value></value>
+                    <value>m2</value>
                   </smarttag>
                 </smarttags>
               </clashobject>
@@ -727,11 +259,11 @@
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>18967506</value>
+                    <value>18721278</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>5.200 m</value>
+                    <value>7.311 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -759,7 +291,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Nivel</name>
-                    <value>N04</value>
+                    <value>N03</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -779,7 +311,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Cable Trays</value>
+                    <value>Bandeja Electrica</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -1072,318 +604,6 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N06</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones Electricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash3" guid="3a39feb9-04cc-445a-9726-40e5f7901afb" status="active" distance="-0.901">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229754.463" y="8183599.510" z="2374.548"/>
-            </clashpoint>
-            <gridlocation>I-14 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>13967635</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.804 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>24.117 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.859 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS HOSPITALIZACIÓN</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>18962580</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>22.555 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones Electricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash4" guid="c3334292-b768-482b-8b7e-b217fba3995f" status="active" distance="-0.879">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229754.490" y="8183599.510" z="2364.008"/>
-            </clashpoint>
-            <gridlocation>I-14 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>13870705</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.789 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>24.042 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.847 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N09</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS HOSPITALIZACIÓN</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>18725039</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>22.404 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N07</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -2476,6 +1696,162 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash78" guid="9c3962ad-d0b5-41bb-9118-fc67e765d081" status="active" distance="-0.405">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229767.905" y="8183550.369" z="2353.672"/>
+            </clashpoint>
+            <gridlocation>G-8 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12216611</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>5.165 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>19.978 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.196 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-104-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE B</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPS RESIDENCIA DE PERSONAL</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>23300766</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>30.780 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -4073,10 +3449,10 @@
               </clashobject>
             </clashobjects>
           </clashresult>
-          <clashresult name="Clash32" guid="29db7e95-98ac-4c16-8343-c799e6393b35" status="active" distance="-0.271">
+          <clashresult name="Clash4" guid="c3334292-b768-482b-8b7e-b217fba3995f" status="active" distance="-0.287">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229754.712" y="8183599.678" z="2369.184"/>
+              <pos3f x="229754.730" y="8183599.691" z="2363.908"/>
             </clashpoint>
             <gridlocation>I-14 : NS2</gridlocation>
             <createddate>
@@ -4087,7 +3463,7 @@
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>13967368</value>
+                    <value>13870705</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
@@ -4159,7 +3535,7 @@
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>18962585</value>
+                    <value>18725039</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
@@ -4191,7 +3567,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Nivel</name>
-                    <value>N08</value>
+                    <value>N07</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -5789,12 +5165,12 @@
               </clashobject>
             </clashobjects>
           </clashresult>
-          <clashresult name="Clash51" guid="291046cb-c45b-4a37-ba59-5373a3db1a03" status="active" distance="-0.173">
+          <clashresult name="Clash51" guid="291046cb-c45b-4a37-ba59-5373a3db1a03" status="active" distance="-0.172">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229769.788" y="8183608.742" z="2342.833"/>
+              <pos3f x="229767.294" y="8183612.439" z="2342.932"/>
             </clashpoint>
-            <gridlocation>K-14 : NS2</gridlocation>
+            <gridlocation>K-15 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
             </createddate>
@@ -5908,6 +5284,162 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash79" guid="d220e4b2-bb8e-40e6-9be1-28b9a5487194" status="active" distance="-0.145">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229809.600" y="8183597.340" z="2353.638"/>
+            </clashpoint>
+            <gridlocation>O-10 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12605636</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>6.130 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>27.478 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>4.397 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Muros</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18952278</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.250 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N05</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -6244,1098 +5776,6 @@
                   <smarttag>
                     <name>Element Sector</name>
                     <value>Edificio</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash62" guid="ca810fcd-12ce-418d-9ede-657c8b129858" status="active" distance="-0.076">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229736.990" y="8183617.059" z="2342.833"/>
-            </clashpoint>
-            <gridlocation>H-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14093394</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.345 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>22.135 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.542 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash63" guid="b604fd72-3faf-443b-b38c-c81b82883542" status="active" distance="-0.076">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229736.900" y="8183616.906" z="2342.851"/>
-            </clashpoint>
-            <gridlocation>H-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14093394</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.345 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>22.135 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.542 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash64" guid="c2f779e6-6ef6-42ee-a475-d28d66f21b41" status="active" distance="-0.076">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229745.265" y="8183622.548" z="2342.900"/>
-            </clashpoint>
-            <gridlocation>J-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14090697</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.340 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>22.135 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>0.221 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash65" guid="36bb468c-b22f-4688-b0fa-f64813af1d29" status="active" distance="-0.071">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229748.681" y="8183624.852" z="2342.920"/>
-            </clashpoint>
-            <gridlocation>J-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14090464</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>1.485 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>7.707 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>0.077 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash66" guid="81bde2ce-6f91-4f4e-8d61-69ae4f6c7254" status="active" distance="-0.066">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229738.342" y="8183617.958" z="2342.833"/>
-            </clashpoint>
-            <gridlocation>I-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14090699</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.340 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>22.083 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.533 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash67" guid="28e0286c-332f-4dd5-a053-73f60eeb4b9a" status="active" distance="-0.066">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229738.276" y="8183617.834" z="2342.859"/>
-            </clashpoint>
-            <gridlocation>H-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14090699</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>4.340 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>22.083 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>3.533 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>NC</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash68" guid="f1f03365-d8c8-4578-a95c-b5dc0908906c" status="active" distance="-0.066">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229741.833" y="8183620.233" z="2342.880"/>
-            </clashpoint>
-            <gridlocation>I-17 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>14090698</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>1.485 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>6.793 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>0.068 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Walls</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Basic Wall</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>BLOQUE C</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>UPSS CUIDADOS INTENSIVOS</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Arquitectura</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>22999720</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value>20.550 m</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Cable Trays</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Cable Tray with Fittings</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N03</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>FUERA DE ROOM</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Instalaciones eléctricas</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Bandeja Electrica</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element ID Partida N°01</name>
@@ -7820,7 +6260,7 @@
           <clashresult name="Clash75" guid="4ea40ff3-e25d-43ab-87cf-31653394ed72" status="active" distance="-0.015">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229710.277" y="8183596.001" z="2344.318"/>
+              <pos3f x="229710.934" y="8183596.444" z="2345.000"/>
             </clashpoint>
             <gridlocation>D-17 : NS2</gridlocation>
             <createddate>
@@ -7976,7 +6416,7 @@
           <clashresult name="Clash76" guid="25965046-8194-44e5-bd38-6b4221c3faa7" status="active" distance="-0.015">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229711.680" y="8183596.947" z="2345.343"/>
+              <pos3f x="229711.023" y="8183596.504" z="2344.318"/>
             </clashpoint>
             <gridlocation>D-17 : NS2</gridlocation>
             <createddate>
@@ -8280,6 +6720,630 @@
                   <smarttag>
                     <name>Element Unidad Medida N°01</name>
                     <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash80" guid="bf2a323a-ffda-4b84-8928-2341090a66e6" status="active" distance="-0.010">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229808.343" y="8183562.935" z="2342.816"/>
+            </clashpoint>
+            <gridlocation>L-7 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12292534</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.115 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>5.152 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.077 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Muros</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18967503</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Tray Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>IEL_BDC_CurvaVerticalExterior-TipoRanurada</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Cable Tray Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash81" guid="9e7af4f5-442e-4fd1-93a4-ee8d633887da" status="active" distance="-0.010">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229808.337" y="8183562.944" z="2338.828"/>
+            </clashpoint>
+            <gridlocation>L-7 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12292534</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.115 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>5.152 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.077 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Muros</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18967502</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>5.200 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash82" guid="198501bd-5f11-4c01-9d97-7bf530c58104" status="active" distance="-0.010">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229808.343" y="8183562.935" z="2343.418"/>
+            </clashpoint>
+            <gridlocation>L-7 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="51"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12292534</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.115 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>5.152 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.077 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-103-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE A</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CONSULTA EXTERNA</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Muros</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18967506</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>5.200 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N04</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="3a39feb9-04cc-445a-9726-40e5f7901afb" status="resolved" distance="-0.901">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229754.463" y="8183599.510" z="2374.548"/>
+            </clashpoint>
+            <gridlocation>I-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13967635</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.804 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>24.117 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.859 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS HOSPITALIZACIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18962580</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>22.555 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
                   </smarttag>
                 </smarttags>
               </clashobject>
@@ -9160,6 +8224,162 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N06</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Electricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>Edificio</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash32" guid="29db7e95-98ac-4c16-8343-c799e6393b35" status="resolved" distance="-0.271">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229754.712" y="8183599.678" z="2369.184"/>
+            </clashpoint>
+            <gridlocation>I-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>13967368</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.804 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>24.117 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.859 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N09</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS HOSPITALIZACIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>18962585</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>22.404 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N08</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -10936,6 +10156,1098 @@
                   <smarttag>
                     <name>Element Nivel</name>
                     <value>N05</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash62" guid="ca810fcd-12ce-418d-9ede-657c8b129858" status="resolved" distance="-0.076">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229736.990" y="8183617.059" z="2342.833"/>
+            </clashpoint>
+            <gridlocation>H-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14093394</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.345 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>22.135 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.542 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash63" guid="b604fd72-3faf-443b-b38c-c81b82883542" status="resolved" distance="-0.076">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229736.900" y="8183616.906" z="2342.851"/>
+            </clashpoint>
+            <gridlocation>H-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14093394</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.345 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>22.135 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.542 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash64" guid="c2f779e6-6ef6-42ee-a475-d28d66f21b41" status="resolved" distance="-0.076">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229745.265" y="8183622.548" z="2342.900"/>
+            </clashpoint>
+            <gridlocation>J-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14090697</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.340 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>22.135 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.221 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash65" guid="36bb468c-b22f-4688-b0fa-f64813af1d29" status="resolved" distance="-0.071">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229748.681" y="8183624.852" z="2342.920"/>
+            </clashpoint>
+            <gridlocation>J-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14090464</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.485 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>7.707 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.077 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash66" guid="81bde2ce-6f91-4f4e-8d61-69ae4f6c7254" status="resolved" distance="-0.066">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229738.342" y="8183617.958" z="2342.833"/>
+            </clashpoint>
+            <gridlocation>I-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14090699</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.340 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>22.083 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.533 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash67" guid="28e0286c-332f-4dd5-a053-73f60eeb4b9a" status="resolved" distance="-0.066">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229738.276" y="8183617.834" z="2342.859"/>
+            </clashpoint>
+            <gridlocation>H-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14090699</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>4.340 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>22.083 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>3.533 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones eléctricas</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Bandeja Electrica</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>NC</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash68" guid="f1f03365-d8c8-4578-a95c-b5dc0908906c" status="resolved" distance="-0.066">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229741.833" y="8183620.233" z="2342.880"/>
+            </clashpoint>
+            <gridlocation>I-17 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="15" minute="47" second="24"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14090698</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>1.485 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>6.793 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>0.068 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-ARQ-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Walls</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Basic Wall</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS CUIDADOS INTENSIVOS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Arquitectura</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>22999720</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>20.550 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-IEL-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Cable Trays</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>FUERA DE ROOM</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N03</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>

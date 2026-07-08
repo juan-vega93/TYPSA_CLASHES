@@ -6,40 +6,40 @@
       <clashtest name="P2_PLU-OCI" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/PLU</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/OCI;lcop_selection_set_tree/Disciplinas/EXIST</locator>
           </clashselection>
         </right>
         <rules/>
         <clashresults>
-          <clashresult name="Clash192" guid="487a6b96-5e39-4606-869c-e7adae5899f7" status="new" distance="-0.076">
+          <clashresult name="Clash196" guid="63a05bfc-07c4-4cb7-ae85-fb4dd79fb001" status="new" distance="-0.094">
             <resultstatus>New</resultstatus>
             <clashpoint>
-              <pos3f x="229820.977" y="8183458.444" z="2327.445"/>
+              <pos3f x="229740.594" y="8183663.818" z="2328.168"/>
             </clashpoint>
-            <gridlocation>F-1 : NS2</gridlocation>
+            <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
+              <date year="2026" month="7" day="8" hour="23" minute="37" second="53"/>
             </createddate>
             <clashobjects>
               <clashobject>
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>12111362</value>
+                    <value>12119775</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value></value>
+                    <value>6.946 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value></value>
+                    <value>2.217 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
@@ -51,11 +51,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
+                    <value>Pipes</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Family</name>
-                    <value>Canal drenaje</value>
+                    <value>Pipe Types</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Edificio</name>
@@ -63,7 +63,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Nivel</name>
-                    <value>ZZZ</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Zona</name>
@@ -75,7 +75,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Codigo de ambiente</name>
-                    <value>-</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Especialidad</name>
@@ -83,7 +83,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -91,11 +91,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element ID Partida N°01</name>
-                    <value>-</value>
+                    <value></value>
                   </smarttag>
                   <smarttag>
                     <name>Element Unidad Medida N°01</name>
-                    <value></value>
+                    <value>m</value>
                   </smarttag>
                 </smarttags>
               </clashobject>
@@ -103,7 +103,7 @@
                 <smarttags>
                   <smarttag>
                     <name>Element Id</name>
-                    <value>11038032</value>
+                    <value>10434561</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
@@ -111,479 +111,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>9.705 m²</value>
+                    <value>328.696 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1.456 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Floors</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Floor</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>EXTERIORES</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N01</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>Exteriores</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Obras Civiles</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Vereda</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash193" guid="f7eb1fbf-8b52-4be5-bb8f-990e411d8b8b" status="new" distance="-0.075">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229818.953" y="8183460.808" z="2327.591"/>
-            </clashpoint>
-            <gridlocation>F-1 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12111362</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Canal drenaje</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>ZZZ</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>11038032</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>9.705 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>1.456 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Floors</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Floor</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>EXTERIORES</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N01</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>Exteriores</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Obras Civiles</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Vereda</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash194" guid="79826196-351d-4dfa-a499-713fdfad1596" status="new" distance="-0.073">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229821.564" y="8183457.305" z="2327.456"/>
-            </clashpoint>
-            <gridlocation>F-1 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12111362</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Canal drenaje</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>ZZZ</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>11038032</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>9.705 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>1.456 m³</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Floors</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Floor</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>EXTERIORES</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N01</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>Exteriores</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Obras Civiles</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Vereda</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash195" guid="fe065b36-4dd7-47f5-9cfe-5ef2ef06a580" status="new" distance="-0.048">
-            <resultstatus>New</resultstatus>
-            <clashpoint>
-              <pos3f x="229818.314" y="8183462.279" z="2327.548"/>
-            </clashpoint>
-            <gridlocation>F-1 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12111362</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Canal drenaje</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>ZZZ</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>11038032</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value>9.705 m²</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value>1.456 m³</value>
+                    <value>49.302 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -1047,11 +579,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -1203,11 +735,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -4635,11 +4167,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5103,11 +4635,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5259,11 +4791,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5415,11 +4947,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5571,11 +5103,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5727,11 +5259,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -5883,11 +5415,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6039,11 +5571,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6104,9 +5636,9 @@
           <clashresult name="Clash36" guid="bb7e1adc-b2de-451e-8289-f253571bf459" status="active" distance="-0.150">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229747.957" y="8183666.017" z="2327.370"/>
+              <pos3f x="229759.144" y="8183649.432" z="2327.370"/>
             </clashpoint>
-            <gridlocation>N-20 : NS2</gridlocation>
+            <gridlocation>N-19 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -6195,11 +5727,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6260,7 +5792,7 @@
           <clashresult name="Clash37" guid="71a70d65-c60a-4776-8f30-bff1c3c3632e" status="active" distance="-0.150">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229745.853" y="8183669.237" z="2327.370"/>
+              <pos3f x="229746.340" y="8183669.566" z="2327.370"/>
             </clashpoint>
             <gridlocation>N-20 : NS2</gridlocation>
             <createddate>
@@ -6351,11 +5883,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6507,11 +6039,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6663,11 +6195,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6819,11 +6351,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -6975,11 +6507,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -7664,9 +7196,9 @@
           <clashresult name="Clash47" guid="31f8b928-2052-43c3-bcd7-9808af13e901" status="active" distance="-0.117">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229799.301" y="8183621.455" z="2327.520"/>
+              <pos3f x="229799.183" y="8183621.584" z="2327.503"/>
             </clashpoint>
-            <gridlocation>P-13 : NS2</gridlocation>
+            <gridlocation>P-14 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -8691,11 +8223,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -8847,11 +8379,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -9065,10 +8597,166 @@
               </clashobject>
             </clashobjects>
           </clashresult>
+          <clashresult name="Clash192" guid="487a6b96-5e39-4606-869c-e7adae5899f7" status="active" distance="-0.076">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229820.977" y="8183458.444" z="2327.445"/>
+            </clashpoint>
+            <gridlocation>F-1 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12111362</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11038032</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>9.705 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>1.456 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Floors</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Floor</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Vereda</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
           <clashresult name="Clash56" guid="9cafd407-9691-4d07-bfac-f4efc5d76be3" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229798.730" y="8183622.962" z="2327.473"/>
+              <pos3f x="229798.319" y="8183622.604" z="2327.492"/>
             </clashpoint>
             <gridlocation>P-14 : NS2</gridlocation>
             <createddate>
@@ -9224,7 +8912,7 @@
           <clashresult name="Clash57" guid="a129be47-f0e6-4cb9-b39d-28a2b259dd26" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229798.730" y="8183622.962" z="2327.473"/>
+              <pos3f x="229798.319" y="8183622.604" z="2327.492"/>
             </clashpoint>
             <gridlocation>P-14 : NS2</gridlocation>
             <createddate>
@@ -9315,11 +9003,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -9476,6 +9164,318 @@
                   <smarttag>
                     <name>Element Volume</name>
                     <value>2.008 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Floors</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Floor</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Vereda</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash193" guid="f7eb1fbf-8b52-4be5-bb8f-990e411d8b8b" status="active" distance="-0.075">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229818.953" y="8183460.808" z="2327.591"/>
+            </clashpoint>
+            <gridlocation>F-1 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12111362</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11038032</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>9.705 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>1.456 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Floors</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Floor</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Vereda</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash194" guid="79826196-351d-4dfa-a499-713fdfad1596" status="active" distance="-0.073">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229821.564" y="8183457.305" z="2327.456"/>
+            </clashpoint>
+            <gridlocation>F-1 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12111362</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11038032</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>9.705 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>1.456 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -14057,6 +14057,162 @@
               </clashobject>
             </clashobjects>
           </clashresult>
+          <clashresult name="Clash195" guid="fe065b36-4dd7-47f5-9cfe-5ef2ef06a580" status="active" distance="-0.048">
+            <resultstatus>Active</resultstatus>
+            <clashpoint>
+              <pos3f x="229818.314" y="8183462.279" z="2327.548"/>
+            </clashpoint>
+            <gridlocation>F-1 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="8" hour="19" minute="16" second="47"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12111362</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11038032</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>9.705 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value>1.456 m³</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Floors</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Floor</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Vereda</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
           <clashresult name="Clash61" guid="510d651b-5057-4b5d-80fb-b9f92ee24998" status="active" distance="-0.046">
             <resultstatus>Active</resultstatus>
             <clashpoint>
@@ -15711,11 +15867,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -16556,7 +16712,7 @@
           <clashresult name="Clash104" guid="7c406f89-6762-44eb-8433-7cd797952de7" status="active" distance="-0.018">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229806.863" y="8183612.780" z="2328.036"/>
+              <pos3f x="229807.278" y="8183613.141" z="2328.036"/>
             </clashpoint>
             <gridlocation>P-12 : NS2</gridlocation>
             <createddate>
@@ -16803,11 +16959,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -17427,11 +17583,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -17583,11 +17739,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -17739,11 +17895,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -17895,11 +18051,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -18363,11 +18519,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -19455,11 +19611,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -19611,11 +19767,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -19767,11 +19923,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -19832,7 +19988,7 @@
           <clashresult name="Clash124" guid="b8e98053-057b-43db-8925-0d12a8d02b86" status="active" distance="-0.005">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229787.441" y="8183501.188" z="2328.018"/>
+              <pos3f x="229788.063" y="8183500.266" z="2328.018"/>
             </clashpoint>
             <gridlocation>F-2 : NS2</gridlocation>
             <createddate>
@@ -19923,11 +20079,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -20079,11 +20235,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>172.562 m²</value>
+                    <value>173.412 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>25.884 m³</value>
+                    <value>26.012 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -21171,11 +21327,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -22796,7 +22952,7 @@
           <clashresult name="Clash143" guid="f8e55cf9-7dbe-4977-aa15-63506304b51c" status="active" distance="-0.00048">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229758.082" y="8183641.351" z="2327.369"/>
+              <pos3f x="229758.081" y="8183641.351" z="2327.369"/>
             </clashpoint>
             <gridlocation>M-18 : NS2</gridlocation>
             <createddate>
@@ -22952,7 +23108,7 @@
           <clashresult name="Clash144" guid="2344f354-6261-4557-b2b3-4498de514a62" status="active" distance="-0.00048">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229758.129" y="8183641.280" z="2327.444"/>
+              <pos3f x="229758.129" y="8183641.280" z="2327.445"/>
             </clashpoint>
             <gridlocation>M-18 : NS2</gridlocation>
             <createddate>
@@ -23195,7 +23351,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>173.666 m</value>
+                    <value>179.934 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -23351,7 +23507,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>173.666 m</value>
+                    <value>179.934 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -23576,9 +23732,9 @@
           <clashresult name="Clash148" guid="62e516c1-a95c-4bfd-88bd-f53bd7f3c258" status="active" distance="-0.0000000343">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229750.339" y="8183636.686" z="2328.168"/>
+              <pos3f x="229744.449" y="8183632.713" z="2328.168"/>
             </clashpoint>
-            <gridlocation>K-18 : NS2</gridlocation>
+            <gridlocation>J-18 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -23732,9 +23888,9 @@
           <clashresult name="Clash149" guid="29f2e142-4c57-457a-b424-47a3626a0d74" status="active" distance="-0.0000000343">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229747.339" y="8183641.133" z="2328.168"/>
+              <pos3f x="229741.449" y="8183637.160" z="2328.168"/>
             </clashpoint>
-            <gridlocation>K-19 : NS2</gridlocation>
+            <gridlocation>J-19 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -23888,9 +24044,9 @@
           <clashresult name="Clash150" guid="7d80cfe0-9800-4e19-b915-eafff3a774f7" status="active" distance="-0.0000000343">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229723.873" y="8183625.305" z="2328.168"/>
+              <pos3f x="229705.360" y="8183612.818" z="2328.168"/>
             </clashpoint>
-            <gridlocation>H-19 : NS2</gridlocation>
+            <gridlocation>E-19 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -24044,9 +24200,9 @@
           <clashresult name="Clash151" guid="f71fb2ef-7f04-4ea8-80a7-72856c26d096" status="active" distance="-0.0000000343">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229726.873" y="8183620.856" z="2328.168"/>
+              <pos3f x="229708.359" y="8183608.371" z="2328.168"/>
             </clashpoint>
-            <gridlocation>H-18 : NS2</gridlocation>
+            <gridlocation>E-18 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -24603,11 +24759,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -24759,11 +24915,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -25383,11 +25539,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -25448,7 +25604,7 @@
           <clashresult name="Clash160" guid="b95d1a90-0b0c-4923-a97b-c3eba3edede5" status="active" distance="-0.000000016">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229758.203" y="8183651.922" z="2327.520"/>
+              <pos3f x="229759.906" y="8183649.398" z="2327.520"/>
             </clashpoint>
             <gridlocation>N-19 : NS2</gridlocation>
             <createddate>
@@ -25539,11 +25695,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -25604,9 +25760,9 @@
           <clashresult name="Clash161" guid="beb400da-5849-4b80-876f-21f0f5fbffdf" status="active" distance="-0.000000016">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229761.612" y="8183644.290" z="2327.520"/>
+              <pos3f x="229769.186" y="8183649.399" z="2327.520"/>
             </clashpoint>
-            <gridlocation>N-18 : NS2</gridlocation>
+            <gridlocation>O-Q : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -25695,11 +25851,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>2041.062 m²</value>
+                    <value>1981.090 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>306.163 m³</value>
+                    <value>297.169 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -26072,9 +26228,9 @@
           <clashresult name="Clash164" guid="bb47e7a0-3466-41c5-b955-ca647906359c" status="active" distance="-0.00000000458">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229835.477" y="8183518.889" z="2332.068"/>
+              <pos3f x="229843.051" y="8183523.997" z="2332.068"/>
             </clashpoint>
-            <gridlocation>L-1 : NS2</gridlocation>
+            <gridlocation>N-1 : NS2</gridlocation>
             <createddate>
               <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
             </createddate>
@@ -26540,7 +26696,7 @@
           <clashresult name="Clash167" guid="1052ecbe-eb0e-4417-bc1c-079b065aa2c5" status="active" distance="0.0000000266">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229842.534" y="8183473.851" z="2328.448"/>
+              <pos3f x="229842.549" y="8183473.825" z="2328.448"/>
             </clashpoint>
             <gridlocation>I-1 : NS2</gridlocation>
             <createddate>
@@ -27161,318 +27317,6 @@
               </clashobject>
             </clashobjects>
           </clashresult>
-          <clashresult name="Clash171" guid="ebdc8cfc-ebec-4206-bbeb-fe200461bb1e" status="active" distance="0.0000308">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229747.593" y="8183666.557" z="2327.395"/>
-            </clashpoint>
-            <gridlocation>N-20 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12116942</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Canal drenaje</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>ZZZ</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>11085270</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Ramps</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Ramp</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>EXTERIORES</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N01</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>Exteriores</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Obras Civiles</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Rampa</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
-          <clashresult name="Clash172" guid="1068edda-ff6e-40a8-94fd-c95d5d81b40f" status="active" distance="0.0000308">
-            <resultstatus>Active</resultstatus>
-            <clashpoint>
-              <pos3f x="229747.593" y="8183666.557" z="2327.520"/>
-            </clashpoint>
-            <gridlocation>N-20 : NS2</gridlocation>
-            <createddate>
-              <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
-            </createddate>
-            <clashobjects>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>12116942</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Plumbing Fixtures</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Canal drenaje</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>ZZZ</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Canaleta</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value></value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-              <clashobject>
-                <smarttags>
-                  <smarttag>
-                    <name>Element Id</name>
-                    <value>11085270</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Length</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Area</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Volume</name>
-                    <value></value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Contenedor Origen</name>
-                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Category</name>
-                    <value>Ramps</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Family</name>
-                    <value>Ramp</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Edificio</name>
-                    <value>EXTERIORES</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Nivel</name>
-                    <value>N01</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Zona</name>
-                    <value>Exteriores</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Codigo de ambiente</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Especialidad</name>
-                    <value>Obras Civiles</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Tipo de elemento</name>
-                    <value>Rampa</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Sector</name>
-                    <value>-</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element ID Partida N°01</name>
-                    <value>--</value>
-                  </smarttag>
-                  <smarttag>
-                    <name>Element Unidad Medida N°01</name>
-                    <value>m2</value>
-                  </smarttag>
-                </smarttags>
-              </clashobject>
-            </clashobjects>
-          </clashresult>
           <clashresult name="Clash173" guid="a79f3cc8-7e8c-41ed-afcd-6852f6510383" status="active" distance="0.000143">
             <resultstatus>Active</resultstatus>
             <clashpoint>
@@ -27788,7 +27632,7 @@
           <clashresult name="Clash175" guid="6a85cf2b-1872-466b-95f9-137bf332cbd2" status="active" distance="0.000294">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229738.452" y="8183635.244" z="2327.468"/>
+              <pos3f x="229738.452" y="8183635.244" z="2327.671"/>
             </clashpoint>
             <gridlocation>J-19 : NS2</gridlocation>
             <createddate>
@@ -27875,7 +27719,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>173.666 m</value>
+                    <value>179.934 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -27944,7 +27788,7 @@
           <clashresult name="Clash176" guid="e0b49287-0761-48e2-b208-b82c98ec04ae" status="active" distance="0.000294">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229738.452" y="8183635.244" z="2327.468"/>
+              <pos3f x="229738.452" y="8183635.244" z="2327.671"/>
             </clashpoint>
             <gridlocation>J-19 : NS2</gridlocation>
             <createddate>
@@ -28031,7 +27875,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>173.666 m</value>
+                    <value>179.934 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -28100,7 +27944,7 @@
           <clashresult name="Clash177" guid="626c484d-f510-4036-956b-9365e2217f29" status="active" distance="0.000294">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229737.706" y="8183634.741" z="2328.168"/>
+              <pos3f x="229737.706" y="8183634.741" z="2327.680"/>
             </clashpoint>
             <gridlocation>J-19 : NS2</gridlocation>
             <createddate>
@@ -28187,7 +28031,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Length</name>
-                    <value>173.666 m</value>
+                    <value>179.934 m</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
@@ -29972,7 +29816,7 @@
           <clashresult name="Clash189" guid="619660b3-845a-48b6-8689-9e704e6f093f" status="active" distance="0.013">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229769.561" y="8183648.998" z="2327.445"/>
+              <pos3f x="229769.561" y="8183648.998" z="2327.520"/>
             </clashpoint>
             <gridlocation>O-Q : NS2</gridlocation>
             <createddate>
@@ -30432,6 +30276,318 @@
                   <smarttag>
                     <name>Element Unidad Medida N°01</name>
                     <value>ml</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash171" guid="ebdc8cfc-ebec-4206-bbeb-fe200461bb1e" status="resolved" distance="0.0000308">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229747.593" y="8183666.557" z="2327.395"/>
+            </clashpoint>
+            <gridlocation>N-20 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12116942</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11085270</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Ramps</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Ramp</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Rampa</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash172" guid="1068edda-ff6e-40a8-94fd-c95d5d81b40f" status="resolved" distance="0.0000308">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229747.593" y="8183666.557" z="2327.520"/>
+            </clashpoint>
+            <gridlocation>N-20 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="22" second="32"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>12116942</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-PLU-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Plumbing Fixtures</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Canal drenaje</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>ZZZ</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Canaleta</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value></value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>11085270</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-OCI-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Ramps</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Ramp</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>EXTERIORES</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N01</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>Exteriores</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Obras Civiles</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Rampa</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value>-</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m2</value>
                   </smarttag>
                 </smarttags>
               </clashobject>

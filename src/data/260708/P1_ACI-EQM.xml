@@ -6,12 +6,12 @@
       <clashtest name="P1_ACI-EQM" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ACI</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="67108865">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EQM</locator>
           </clashselection>
         </right>
@@ -644,7 +644,7 @@
           <clashresult name="Clash6" guid="f61b254b-2d83-405d-829d-fff97bce8096" status="active" distance="-0.075">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229835.869" y="8183551.804" z="2329.308"/>
+              <pos3f x="229835.869" y="8183551.804" z="2329.068"/>
             </clashpoint>
             <gridlocation>O-4 : NS2</gridlocation>
             <createddate>
@@ -1424,7 +1424,7 @@
           <clashresult name="Clash10" guid="5447cf7e-9be8-449c-a191-dd7571d53590" status="active" distance="-0.055">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229835.931" y="8183551.845" z="2329.485"/>
+              <pos3f x="229835.931" y="8183551.845" z="2329.490"/>
             </clashpoint>
             <gridlocation>O-4 : NS2</gridlocation>
             <createddate>
@@ -3452,7 +3452,7 @@
           <clashresult name="Clash27" guid="80309280-1415-4f3d-9786-9f665a7a08db" status="active" distance="0.004">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229786.557" y="8183598.598" z="2334.508"/>
+              <pos3f x="229786.557" y="8183598.598" z="2335.307"/>
             </clashpoint>
             <gridlocation>M-12 : NS2</gridlocation>
             <createddate>
@@ -3608,7 +3608,7 @@
           <clashresult name="Clash28" guid="ee78589f-0424-409d-8ab1-928af07bd6df" status="active" distance="0.004">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229786.595" y="8183598.624" z="2334.509"/>
+              <pos3f x="229786.595" y="8183598.624" z="2335.307"/>
             </clashpoint>
             <gridlocation>M-12 : NS2</gridlocation>
             <createddate>
@@ -3764,7 +3764,7 @@
           <clashresult name="Clash29" guid="36ce5c32-34f8-494e-b4fe-af3f6506b03b" status="active" distance="0.004">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229786.557" y="8183598.598" z="2334.509"/>
+              <pos3f x="229786.557" y="8183598.598" z="2335.307"/>
             </clashpoint>
             <gridlocation>M-12 : NS2</gridlocation>
             <createddate>

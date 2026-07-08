@@ -6,12 +6,12 @@
       <clashtest name="P2_EST-PLU" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EST</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/PLU</locator>
           </clashselection>
         </right>
@@ -1443,11 +1443,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -1599,11 +1599,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -12987,11 +12987,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>3192.166 m²</value>
+                    <value>3205.847 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>798.042 m³</value>
+                    <value>801.462 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -13611,11 +13611,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>3192.166 m²</value>
+                    <value>3205.847 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>798.042 m³</value>
+                    <value>801.462 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -30459,11 +30459,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -33579,11 +33579,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>

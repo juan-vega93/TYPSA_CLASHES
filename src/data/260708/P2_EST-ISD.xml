@@ -6,12 +6,12 @@
       <clashtest name="P2_EST-ISD" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EST</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/ISD</locator>
           </clashselection>
         </right>
@@ -6907,7 +6907,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>37.537 m³</value>
+                    <value>37.462 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -10963,7 +10963,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>37.275 m³</value>
+                    <value>37.200 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -11427,11 +11427,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>10908.865 m²</value>
+                    <value>10903.011 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>2727.216 m³</value>
+                    <value>2725.753 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -18563,7 +18563,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -18719,7 +18719,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -18875,7 +18875,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -19499,7 +19499,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -19655,7 +19655,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -20123,7 +20123,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -20279,7 +20279,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -20435,7 +20435,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -20591,7 +20591,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -20903,7 +20903,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -21059,7 +21059,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -21371,7 +21371,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -21527,7 +21527,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -21683,7 +21683,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -21839,7 +21839,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -22775,7 +22775,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -22971,11 +22971,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -23087,7 +23087,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -23243,7 +23243,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -23439,11 +23439,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -23555,7 +23555,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -23751,11 +23751,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -23867,7 +23867,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24023,7 +24023,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24179,7 +24179,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24335,7 +24335,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24491,7 +24491,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24647,7 +24647,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24803,7 +24803,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24959,7 +24959,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -24999,11 +24999,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -25115,7 +25115,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -25155,11 +25155,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -25271,7 +25271,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -25895,7 +25895,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26207,7 +26207,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26363,7 +26363,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26403,11 +26403,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -26519,7 +26519,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26559,11 +26559,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -26675,7 +26675,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26715,11 +26715,11 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Area</name>
-                    <value>4381.468 m²</value>
+                    <value>4374.737 m²</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Volume</name>
-                    <value>1095.367 m³</value>
+                    <value>1093.684 m³</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Contenedor Origen</name>
@@ -26831,7 +26831,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías MEP</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>
@@ -26987,7 +26987,7 @@
                   </smarttag>
                   <smarttag>
                     <name>Element Tipo de elemento</name>
-                    <value>Accesorios de tuberías</value>
+                    <value>TuberiaDesagüe</value>
                   </smarttag>
                   <smarttag>
                     <name>Element Sector</name>

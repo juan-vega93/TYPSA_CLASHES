@@ -6,12 +6,12 @@
       <clashtest name="P1_EST-EQM" test_type="hard" status="ok" tolerance="0.010" merge_composites="0">
         <linkage mode="none"/>
         <left>
-          <clashselection selfintersect="0" primtypes="1040187393">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EST</locator>
           </clashselection>
         </left>
         <right>
-          <clashselection selfintersect="0" primtypes="1291845633">
+          <clashselection selfintersect="0" primtypes="1">
             <locator>lcop_selection_set_tree/Disciplinas/EQM</locator>
           </clashselection>
         </right>
@@ -1580,7 +1580,7 @@
           <clashresult name="Clash11" guid="07a7cabd-2432-4767-9c14-c49688d39fee" status="active" distance="-0.260">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229726.801" y="8183647.171" z="2334.058"/>
+              <pos3f x="229727.596" y="8183646.205" z="2334.058"/>
             </clashpoint>
             <gridlocation>I-20 : NS2</gridlocation>
             <createddate>
@@ -8444,7 +8444,7 @@
           <clashresult name="Clash55" guid="2b516d8d-10e7-4c39-b964-a0603ed99bc1" status="active" distance="-0.112">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229743.434" y="8183659.575" z="2334.058"/>
+              <pos3f x="229742.799" y="8183659.177" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -9224,7 +9224,7 @@
           <clashresult name="Clash60" guid="93545219-a900-46a1-ae94-0c313a12c318" status="active" distance="-0.091">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229738.800" y="8183660.573" z="2334.058"/>
+              <pos3f x="229739.007" y="8183660.265" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -9380,7 +9380,7 @@
           <clashresult name="Clash61" guid="5db3f5d4-d21a-4776-ace7-f69e40d10c0f" status="active" distance="-0.091">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229741.903" y="8183655.972" z="2334.058"/>
+              <pos3f x="229742.111" y="8183655.664" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -10940,7 +10940,7 @@
           <clashresult name="Clash71" guid="e739392f-74ed-490d-9cf1-7fbcc54a1c1c" status="active" distance="-0.070">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229756.473" y="8183627.178" z="2344.564"/>
+              <pos3f x="229756.473" y="8183627.179" z="2344.564"/>
             </clashpoint>
             <gridlocation>K-17 : NS2</gridlocation>
             <createddate>
@@ -11096,7 +11096,7 @@
           <clashresult name="Clash72" guid="16096efe-1f90-4919-a28a-f726bbcf5edb" status="active" distance="-0.054">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229742.894" y="8183656.158" z="2334.058"/>
+              <pos3f x="229743.074" y="8183656.167" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -11252,7 +11252,7 @@
           <clashresult name="Clash73" guid="144f357d-b1d5-4935-88fb-4aa1c2340d8e" status="active" distance="-0.054">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229739.971" y="8183660.767" z="2334.058"/>
+              <pos3f x="229739.790" y="8183660.759" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -11408,7 +11408,7 @@
           <clashresult name="Clash74" guid="be0cea2b-5e46-4799-b693-181fc58b84b2" status="active" distance="-0.050">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229756.432" y="8183627.151" z="2347.367"/>
+              <pos3f x="229756.473" y="8183627.179" z="2344.318"/>
             </clashpoint>
             <gridlocation>K-17 : NS2</gridlocation>
             <createddate>
@@ -11876,7 +11876,7 @@
           <clashresult name="Clash76" guid="eb86ac65-3838-43d2-9ce9-2b34ee850880" status="active" distance="-0.041">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229820.436" y="8183590.097" z="2333.558"/>
+              <pos3f x="229820.387" y="8183590.092" z="2333.558"/>
             </clashpoint>
             <gridlocation>P-9 : NS2</gridlocation>
             <createddate>
@@ -12032,7 +12032,7 @@
           <clashresult name="Clash77" guid="6d1a481e-d483-410b-b1c7-2bbb2f0421dd" status="active" distance="-0.041">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229817.630" y="8183587.940" z="2333.558"/>
+              <pos3f x="229817.625" y="8183587.989" z="2333.558"/>
             </clashpoint>
             <gridlocation>O-9 : NS2</gridlocation>
             <createddate>
@@ -12344,7 +12344,7 @@
           <clashresult name="Clash79" guid="12dcf4d3-a212-45a9-a41f-0a3a1904ce4d" status="active" distance="-0.040">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229740.895" y="8183647.302" z="2334.058"/>
+              <pos3f x="229739.982" y="8183648.188" z="2334.058"/>
             </clashpoint>
             <gridlocation>K-19 : NS2</gridlocation>
             <createddate>
@@ -12500,7 +12500,7 @@
           <clashresult name="Clash80" guid="ba70080d-7f94-4999-90b4-fe4c0f3422aa" status="active" distance="-0.040">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229742.121" y="8183649.631" z="2334.058"/>
+              <pos3f x="229741.888" y="8183649.475" z="2334.058"/>
             </clashpoint>
             <gridlocation>K-19 : NS2</gridlocation>
             <createddate>
@@ -16088,7 +16088,7 @@
           <clashresult name="Clash103" guid="987c411c-c646-4cd3-820b-4488081c4453" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229739.754" y="8183647.359" z="2334.058"/>
+              <pos3f x="229739.724" y="8183647.365" z="2334.058"/>
             </clashpoint>
             <gridlocation>K-19 : NS2</gridlocation>
             <createddate>
@@ -16244,7 +16244,7 @@
           <clashresult name="Clash104" guid="ce58a539-bd49-477f-9cb6-3304feb7956b" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229741.631" y="8183648.651" z="2334.058"/>
+              <pos3f x="229741.661" y="8183648.645" z="2334.058"/>
             </clashpoint>
             <gridlocation>K-19 : NS2</gridlocation>
             <createddate>
@@ -16400,7 +16400,7 @@
           <clashresult name="Clash105" guid="d4d4e735-671c-4435-a506-e9f3df98127a" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229743.259" y="8183654.701" z="2334.058"/>
+              <pos3f x="229743.269" y="8183654.725" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -16556,7 +16556,7 @@
           <clashresult name="Clash106" guid="e8710968-239c-4297-be32-d099b670df5e" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229743.873" y="8183655.115" z="2334.058"/>
+              <pos3f x="229743.879" y="8183655.145" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -16712,7 +16712,7 @@
           <clashresult name="Clash107" guid="6c1a0d45-88f3-49ea-96a0-24d0b7e8ef57" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229740.744" y="8183659.753" z="2334.058"/>
+              <pos3f x="229740.770" y="8183659.715" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -16868,7 +16868,7 @@
           <clashresult name="Clash108" guid="0db01869-82c0-487a-92ae-0c82a3263c33" status="active" distance="-0.020">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229740.162" y="8183659.332" z="2334.058"/>
+              <pos3f x="229740.156" y="8183659.301" z="2334.058"/>
             </clashpoint>
             <gridlocation>L-20 : NS2</gridlocation>
             <createddate>
@@ -17492,7 +17492,7 @@
           <clashresult name="Clash113" guid="84fc57bc-c224-402e-8dad-166347b84f83" status="active" distance="-0.012">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229820.602" y="8183590.353" z="2333.558"/>
+              <pos3f x="229820.094" y="8183590.134" z="2333.558"/>
             </clashpoint>
             <gridlocation>P-9 : NS2</gridlocation>
             <createddate>
@@ -17648,7 +17648,7 @@
           <clashresult name="Clash114" guid="32c0ebab-701b-4cef-8a82-82c5aa4780c1" status="active" distance="-0.012">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229817.369" y="8183588.155" z="2333.558"/>
+              <pos3f x="229817.919" y="8183588.091" z="2333.558"/>
             </clashpoint>
             <gridlocation>O-9 : NS2</gridlocation>
             <createddate>
@@ -17804,7 +17804,7 @@
           <clashresult name="Clash115" guid="bc219236-b6d7-4f42-99fd-879b657858e4" status="active" distance="-0.012">
             <resultstatus>Active</resultstatus>
             <clashpoint>
-              <pos3f x="229729.217" y="8183644.839" z="2334.058"/>
+              <pos3f x="229729.514" y="8183644.399" z="2334.058"/>
             </clashpoint>
             <gridlocation>I-20 : NS2</gridlocation>
             <createddate>
