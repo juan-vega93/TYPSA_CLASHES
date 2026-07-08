@@ -61,6 +61,6 @@ export interface ClashSnapshot {
 export function severityFor(distanceMeters: number): Severity {
   const d = Math.abs(distanceMeters);
   if (d >= 0.1) return "alta";
-  if (d >= 0.05) return "media";
+  if (d >= 0.01) return "media";
   return "baja";
 }
