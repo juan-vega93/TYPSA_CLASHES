@@ -29,7 +29,7 @@ export function UbicacionTab({
   globalBounds: { xMin: number; xMax: number; yMin: number; yMax: number };
 }) {
   // Background image for the site plan (place your raster/SVG in `public/mi-plano.svg` or change this path)
-  const BG_IMAGE = "/plano.png";
+  const BG_IMAGE = `${import.meta.env.BASE_URL}plano.png`;
   const { zonas, niveles, matrix, max } = useMemo(() => {
     const zSet = new Map<string, number>();
     const nSet = new Map<string, number>();

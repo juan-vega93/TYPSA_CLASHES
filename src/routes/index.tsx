@@ -111,7 +111,7 @@ function Index() {
         <div className="mx-auto flex max-w-[1400px] flex-col gap-3 px-6 py-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/typsa-logo.jpg"
+              src={`${import.meta.env.BASE_URL}typsa-logo.jpg`}
               alt="TYPSA"
               className="h-12 w-12 rounded-md object-cover shadow-[var(--shadow-soft)]"
             />
