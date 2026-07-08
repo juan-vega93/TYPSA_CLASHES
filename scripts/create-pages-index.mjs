@@ -32,6 +32,7 @@ const html = `<!doctype html>
 `;
 
 writeFileSync(join(outDir, "index.html"), html);
+writeFileSync(join(outDir, ".nojekyll"), "");
 
 if (existsSync(join(outDir, "index.html"))) {
   copyFileSync(join(outDir, "index.html"), join(outDir, "404.html"));
