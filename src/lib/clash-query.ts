@@ -1,75 +1,75 @@
 import type { Clash, ClashStatus, Severity } from "./clash-types";
+import { getProjectField, getRuntimeFilterFields, type ProjectConfig } from "./project-config";
 
-export interface FilterState {
-  test?: string;
-  status?: string;
-  severity?: string;
-  zona?: string;
-  nivel?: string;
-  edificio?: string;
-  sector?: string;
-  categoria?: string;
-  contenedor?: string;
-  prioridad?: string;
+export interface FilterState extends Record<string, string | undefined> {
   search?: string;
 }
 
-export type FilterKey = Exclude<keyof FilterState, "search">;
+export type FilterKey = string;
 
-export const FILTER_DEFS: {
-  key: FilterKey;
+export interface RuntimeFilterDef {
+  key: string;
   label: string;
   get: (c: Clash) => string | undefined;
-}[] = [
-  { key: "test", label: "Test", get: (c) => c.test },
-  { key: "status", label: "Estado", get: (c) => c.status },
-  { key: "severity", label: "Severidad", get: (c) => c.severity },
-  { key: "zona", label: "Zona", get: (c) => c.zona },
-  { key: "nivel", label: "Nivel", get: (c) => c.nivel },
-  { key: "edificio", label: "Edificio", get: (c) => c.edificio },
-  { key: "sector", label: "Sector", get: (c) => c.sector },
-  { key: "categoria", label: "Par categ.", get: (c) => c.categoriaPair },
-  { key: "contenedor", label: "Contenedor", get: (c) => c.contenedor },
-  { key: "prioridad", label: "Prioridad", get: (c) => c.prioridad },
-];
+}
+
+export function buildFilterDefs(config: ProjectConfig): RuntimeFilterDef[] {
+  const runtimeFields = new Map(getRuntimeFilterFields(config).map((field) => [field.key, field]));
+  return [
+    { key: "test", label: getProjectField(config, "test").label, get: (c) => c.test },
+    { key: "status", label: getProjectField(config, "estado").label, get: (c) => c.status },
+    { key: "severity", label: getProjectField(config, "severity").label, get: (c) => c.severity },
+    fieldFilterDef(runtimeFields, "zona", (c) => c.zona),
+    fieldFilterDef(runtimeFields, "nivel", (c) => c.nivel),
+    fieldFilterDef(runtimeFields, "edificio", (c) => c.edificio),
+    fieldFilterDef(runtimeFields, "sector", (c) => c.sector),
+    {
+      key: "categoria",
+      label: getProjectField(config, "categoria").label,
+      get: (c) => c.categoriaPair,
+    },
+    fieldFilterDef(runtimeFields, "contenedor", (c) => c.contenedor),
+    {
+      key: "prioridad",
+      label: getProjectField(config, "prioridad").label,
+      get: (c) => c.prioridad,
+    },
+  ];
+}
+
+function fieldFilterDef(
+  fields: Map<string, { key: string; label: string }>,
+  key: string,
+  fallback: (c: Clash) => string | undefined,
+): RuntimeFilterDef {
+  const field = fields.get(key);
+  if (!field) throw new Error(`Missing runtime filter field config: ${key}`);
+  return {
+    key,
+    label: field.label,
+    get: (c) => c.filterValues?.[key] || fallback(c),
+  };
+}
 
 export interface ClashIndex {
   byId: Map<string, Clash>;
   allIds: string[];
-  filters: Record<FilterKey, Map<string, string[]>>;
-  options: Record<FilterKey, string[]>;
+  filterDefs: RuntimeFilterDef[];
+  filters: Record<string, Map<string, string[]>>;
+  options: Record<string, string[]>;
   searchText: Map<string, string>;
 }
 
-const EMPTY_INDEX: ClashIndex = {
-  byId: new Map(),
-  allIds: [],
-  filters: {
-    test: new Map(),
-    status: new Map(),
-    severity: new Map(),
-    zona: new Map(),
-    nivel: new Map(),
-    edificio: new Map(),
-    sector: new Map(),
-    categoria: new Map(),
-    contenedor: new Map(),
-    prioridad: new Map(),
-  },
-  options: {
-    test: [],
-    status: [],
-    severity: [],
-    zona: [],
-    nivel: [],
-    edificio: [],
-    sector: [],
-    categoria: [],
-    contenedor: [],
-    prioridad: [],
-  },
-  searchText: new Map(),
-};
+function emptyIndex(filterDefs: RuntimeFilterDef[]): ClashIndex {
+  return {
+    byId: new Map(),
+    allIds: [],
+    filterDefs,
+    filters: Object.fromEntries(filterDefs.map((d) => [d.key, new Map<string, string[]>()])),
+    options: Object.fromEntries(filterDefs.map((d) => [d.key, []])),
+    searchText: new Map(),
+  };
+}
 
 function addToIndex(map: Map<string, string[]>, value: string | undefined, id: string) {
   if (!value || value.trim() === "") return;
@@ -93,6 +93,7 @@ function buildSearchText(c: Clash) {
     c.categoriaPair,
     c.familyPair,
     c.typePair,
+    ...Object.values(c.filterValues ?? {}),
     c.items[0].elementId,
     c.items[1].elementId,
     c.items[0].family,
@@ -105,11 +106,12 @@ function buildSearchText(c: Clash) {
     .toLowerCase();
 }
 
-export function buildClashIndex(clashes: Clash[]): ClashIndex {
-  if (clashes.length === 0) return EMPTY_INDEX;
+export function buildClashIndex(clashes: Clash[], config: ProjectConfig): ClashIndex {
+  const filterDefs = buildFilterDefs(config);
+  if (clashes.length === 0) return emptyIndex(filterDefs);
 
   const filters = Object.fromEntries(
-    FILTER_DEFS.map((d) => [d.key, new Map<string, string[]>()])
+    filterDefs.map((d) => [d.key, new Map<string, string[]>()]),
   ) as ClashIndex["filters"];
   const byId = new Map<string, Clash>();
   const searchText = new Map<string, string>();
@@ -119,23 +121,23 @@ export function buildClashIndex(clashes: Clash[]): ClashIndex {
     byId.set(clash.id, clash);
     allIds.push(clash.id);
     searchText.set(clash.id, buildSearchText(clash));
-    for (const def of FILTER_DEFS) addToIndex(filters[def.key], def.get(clash), clash.id);
+    for (const def of filterDefs) addToIndex(filters[def.key], def.get(clash), clash.id);
   }
 
   const options = Object.fromEntries(
-    FILTER_DEFS.map((d) => [
+    filterDefs.map((d) => [
       d.key,
       Array.from(filters[d.key].keys()).sort((a, b) => a.localeCompare(b)),
-    ])
+    ]),
   ) as ClashIndex["options"];
 
-  return { byId, allIds, filters, options, searchText };
+  return { byId, allIds, filterDefs, filters, options, searchText };
 }
 
-function selectedFilterEntries(filters: FilterState) {
-  return FILTER_DEFS.map((d) => [d.key, filters[d.key]] as const).filter(
-    ([, value]) => value && value !== "__all__"
-  );
+function selectedFilterEntries(index: ClashIndex, filters: FilterState) {
+  return index.filterDefs
+    .map((d) => [d.key, filters[d.key]] as const)
+    .filter(([, value]) => value && value !== "__all__");
 }
 
 function materialize(index: ClashIndex, ids: string[]) {
@@ -148,7 +150,7 @@ function materialize(index: ClashIndex, ids: string[]) {
 }
 
 export function queryClashes(index: ClashIndex, filters: FilterState): Clash[] {
-  const active = selectedFilterEntries(filters);
+  const active = selectedFilterEntries(index, filters);
   let ids: string[];
 
   if (active.length === 0) {

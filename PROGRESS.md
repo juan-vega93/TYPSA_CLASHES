@@ -28,6 +28,10 @@ Dashboard web para visualizar, filtrar y gestionar clashes BIM de Navisworks/XML
   - Prioridad
 - `Contenedor` reemplazó el filtro anterior de `Archivo`.
 - `Prioridad` se extrae de nombres tipo `P1_EST-ACI`, `P2_ARQ-IME`.
+- Configuracion centralizada en `src/config/project.json` para campos IREN SUR,
+  umbrales de severidad, campo `guid` y patron de prioridad.
+- Modal de configuracion del proyecto conectado a overrides locales; al guardar
+  o restaurar se reinician los filtros activos.
 - Logo TYPSA en header.
 - Título `IREN SUR` en rojo TYPSA.
 - Subtítulo `Dashboard de gestion de clashes`.
@@ -50,15 +54,18 @@ Dashboard web para visualizar, filtrar y gestionar clashes BIM de Navisworks/XML
 ## Archivos importantes
 
 - `src/lib/clash-parser.ts`
-  Parser XML. Extrae items, contenedor, prioridad, coordenadas, estado, distancia y severidad.
+  Parser XML. Extrae items, contenedor, prioridad, coordenadas, estado, distancia y severidad usando configuracion centralizada.
 - `src/lib/clash-types.ts`
-  Tipos principales y función `severityFor`.
-  Regla actual de severidad:
-  ```ts
-  if (d >= 0.1) return "alta";
-  if (d >= 0.01) return "media";
-  return "baja";
-  ```
+  Tipos principales y funcion `severityFor`, ahora alimentada por `src/config/project.json`.
+- `src/lib/project-config.ts`
+  Normaliza la configuracion default y overrides locales; expone helpers para parser, severidad y filtros.
+- `src/config/project.schema.ts`
+  Schema TypeScript para campos, severidad, GUID y extraccion de prioridad.
+- `src/config/project.json`
+  Configuracion default IREN SUR con tags XML actuales, umbrales 0.1/0.01,
+  `guidField: "guid"` y regex `\b(P\d+)(?:[_-]|\b)`.
+- `src/components/dashboard/project-settings-dialog.tsx`
+  Modal de configuracion para overrides locales del proyecto.
 - `src/lib/use-clashes.ts`
   Carga XML recursiva, agrupa snapshots fechados y usa Worker.
 - `src/lib/clash-worker.ts`
@@ -133,12 +140,6 @@ GitHub Actions reconstruye Pages automáticamente.
 
 ## Pendiente
 
-- Hacer commit/push del último cambio de severidad si aún no se subió:
-  ```bash
-  git add src/lib/clash-types.ts
-  git commit -m "Ajustar umbrales de severidad"
-  git push
-  ```
 - Verificar visualmente GitHub Pages tras el último deploy.
 - Limpiar o retirar `scripts/create-pages-index.mjs` si se decide eliminar el flujo anterior.
 - Segunda fase: integrar visor BIM con That Open Company:

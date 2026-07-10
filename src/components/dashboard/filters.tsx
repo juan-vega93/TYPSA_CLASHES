@@ -10,6 +10,7 @@ import {
   MapPin,
   Package,
   ShieldCheck,
+  SlidersHorizontal,
 } from "lucide-react";
 import {
   Select,
@@ -19,39 +20,37 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import type { Clash } from "@/lib/clash-types";
-import type { FilterKey, FilterState } from "@/lib/clash-query";
+import type { FilterState, RuntimeFilterDef } from "@/lib/clash-query";
 
-const DEFS: {
-  key: FilterKey;
-  label: string;
-  icon: React.ComponentType<{ className?: string }>;
-}[] = [
-  { key: "test", label: "Test", icon: Activity },
-  { key: "status", label: "Estado", icon: ShieldCheck },
-  { key: "severity", label: "Severidad", icon: AlertTriangle },
-  { key: "zona", label: "Zona", icon: MapPin },
-  { key: "nivel", label: "Nivel", icon: Building2 },
-  { key: "edificio", label: "Edificio", icon: Layers },
-  { key: "sector", label: "Sector", icon: Grid },
-  { key: "categoria", label: "Par categ.", icon: Activity },
-  { key: "contenedor", label: "Contenedor", icon: Package },
-  { key: "prioridad", label: "Prioridad", icon: Flag },
-];
+const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  test: Activity,
+  status: ShieldCheck,
+  severity: AlertTriangle,
+  zona: MapPin,
+  nivel: Building2,
+  edificio: Layers,
+  sector: Grid,
+  categoria: Activity,
+  contenedor: Package,
+  prioridad: Flag,
+};
 
 export const FiltersBar = memo(function FiltersBar({
   all,
   filtered,
   options,
+  filterDefs,
   value,
   onChange,
 }: {
   all: Clash[];
   filtered: Clash[];
-  options: Record<FilterKey, string[]>;
+  options: Record<string, string[]>;
+  filterDefs: RuntimeFilterDef[];
   value: FilterState;
   onChange: (v: FilterState) => void;
 }) {
-  const activeCount = DEFS.filter((d) => {
+  const activeCount = filterDefs.filter((d) => {
     const v = value[d.key];
     return v && v !== "__all__";
   }).length;
@@ -63,8 +62,9 @@ export const FiltersBar = memo(function FiltersBar({
         Filtros - {activeCount} activo(s) - {filtered.length} / {all.length} clashes
       </div>
       <div className="flex flex-wrap gap-2">
-        {DEFS.map((d) => {
-          const opts = options[d.key];
+        {filterDefs.map((d) => {
+          const Icon = ICONS[d.key] ?? SlidersHorizontal;
+          const opts = options[d.key] ?? [];
           const v = value[d.key] ?? "__all__";
           return (
             <Select
@@ -74,7 +74,7 @@ export const FiltersBar = memo(function FiltersBar({
             >
               <SelectTrigger className="h-9 w-[150px] rounded-full border-border/70 bg-background/60 text-sm">
                 <SelectValue placeholder={d.label}>
-                  <d.icon className="mr-1 h-4 w-4 text-muted-foreground" />
+                  <Icon className="mr-1 h-4 w-4 text-muted-foreground" />
                   {d.label}
                 </SelectValue>
               </SelectTrigger>

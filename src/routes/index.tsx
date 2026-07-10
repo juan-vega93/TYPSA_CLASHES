@@ -6,8 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useClashes } from "@/lib/use-clashes";
 import { useClashState } from "@/lib/use-clash-state";
+import { useProjectConfig } from "@/lib/project-config";
 import { FiltersBar } from "@/components/dashboard/filters";
 import { KpiCards } from "@/components/dashboard/kpis";
+import { ProjectSettingsDialog } from "@/components/dashboard/project-settings-dialog";
 import {
   buildClashIndex,
   getGlobalBounds,
@@ -18,22 +20,22 @@ import {
 import type { Clash } from "@/lib/clash-types";
 
 const ResumenTab = lazy(() =>
-  import("@/components/dashboard/tab-resumen").then((m) => ({ default: m.ResumenTab }))
+  import("@/components/dashboard/tab-resumen").then((m) => ({ default: m.ResumenTab })),
 );
 const UbicacionTab = lazy(() =>
-  import("@/components/dashboard/tab-ubicacion").then((m) => ({ default: m.UbicacionTab }))
+  import("@/components/dashboard/tab-ubicacion").then((m) => ({ default: m.UbicacionTab })),
 );
 const ElementosTab = lazy(() =>
-  import("@/components/dashboard/tab-elementos").then((m) => ({ default: m.ElementosTab }))
+  import("@/components/dashboard/tab-elementos").then((m) => ({ default: m.ElementosTab })),
 );
 const GestionTab = lazy(() =>
-  import("@/components/dashboard/tab-gestion").then((m) => ({ default: m.GestionTab }))
+  import("@/components/dashboard/tab-gestion").then((m) => ({ default: m.GestionTab })),
 );
 const CalidadTab = lazy(() =>
-  import("@/components/dashboard/tab-calidad").then((m) => ({ default: m.CalidadTab }))
+  import("@/components/dashboard/tab-calidad").then((m) => ({ default: m.CalidadTab })),
 );
 const TimelineTab = lazy(() =>
-  import("@/components/dashboard/tab-timeline").then((m) => ({ default: m.TimelineTab }))
+  import("@/components/dashboard/tab-timeline").then((m) => ({ default: m.TimelineTab })),
 );
 
 export const Route = createFileRoute("/")({
@@ -58,7 +60,10 @@ export const Route = createFileRoute("/")({
 
 type TabId = "resumen" | "ubicacion" | "elementos" | "gestion" | "calidad" | "timeline";
 
-function applyStatusOverrides(clashes: Clash[], overrides: Record<string, { status?: Clash["status"] }>) {
+function applyStatusOverrides(
+  clashes: Clash[],
+  overrides: Record<string, { status?: Clash["status"] }>,
+) {
   let changed = false;
   const out = clashes.map((c) => {
     const status = overrides[c.id]?.status;
@@ -78,7 +83,9 @@ function LoadingPanel() {
 }
 
 export function Index() {
-  const { clashes, snapshots, ingestFiles, clearExtras, hasExtras, isLoading, isParsing, errors } = useClashes();
+  const { config, hasOverride, saveConfig, restoreDefaults, exportConfig } = useProjectConfig();
+  const { clashes, snapshots, ingestFiles, clearExtras, hasExtras, isLoading, isParsing, errors } =
+    useClashes(config);
   const { data: state, update, reset } = useClashState();
   const [filters, setFilters] = useState<FilterState>({});
   const deferredFilters = useDeferredValue(filters);
@@ -87,22 +94,22 @@ export function Index() {
 
   const withOverrides = useMemo(
     () => applyStatusOverrides(clashes, state.overrides),
-    [clashes, state.overrides]
+    [clashes, state.overrides],
   );
-  const index = useMemo(() => buildClashIndex(withOverrides), [withOverrides]);
-  const filtered = useMemo(
-    () => queryClashes(index, deferredFilters),
-    [index, deferredFilters]
-  );
+  const index = useMemo(() => buildClashIndex(withOverrides, config), [withOverrides, config]);
+  const filtered = useMemo(() => queryClashes(index, deferredFilters), [index, deferredFilters]);
   const metrics = useMemo(() => summarizeClashes(filtered), [filtered]);
   const globalBounds = useMemo(() => getGlobalBounds(clashes), [clashes]);
   const timelineSnapshots = useMemo(
     () =>
       snapshots.map((snapshot) => ({
         ...snapshot,
-        clashes: queryClashes(buildClashIndex(applyStatusOverrides(snapshot.clashes, state.overrides)), deferredFilters),
+        clashes: queryClashes(
+          buildClashIndex(applyStatusOverrides(snapshot.clashes, state.overrides), config),
+          deferredFilters,
+        ),
       })),
-    [snapshots, state.overrides, deferredFilters]
+    [snapshots, state.overrides, deferredFilters, config],
   );
 
   return (
@@ -163,6 +170,19 @@ export function Index() {
             >
               <Trash2 className="h-4 w-4" />
             </Button>
+            <ProjectSettingsDialog
+              config={config}
+              hasOverride={hasOverride}
+              onSave={(nextConfig) => {
+                saveConfig(nextConfig);
+                setFilters({});
+              }}
+              onRestoreDefaults={() => {
+                restoreDefaults();
+                setFilters({});
+              }}
+              onExport={exportConfig}
+            />
           </div>
         </div>
       </header>
@@ -174,20 +194,55 @@ export function Index() {
           </div>
         )}
 
-        <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as TabId)} className="space-y-4">
+        <Tabs
+          value={activeTab}
+          onValueChange={(value) => setActiveTab(value as TabId)}
+          className="space-y-4"
+        >
           <TabsList className="h-auto flex-wrap justify-start gap-1 rounded-full bg-muted/60 p-1">
-            <TabsTrigger value="resumen" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Resumen</TabsTrigger>
-            <TabsTrigger value="ubicacion" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Ubicacion &amp; Mapa</TabsTrigger>
-            <TabsTrigger value="elementos" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Elementos &amp; Pares</TabsTrigger>
-            <TabsTrigger value="gestion" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Gestion de avance</TabsTrigger>
-            <TabsTrigger value="calidad" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Calidad de datos</TabsTrigger>
-            <TabsTrigger value="timeline" className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm">Linea de tiempo</TabsTrigger>
+            <TabsTrigger
+              value="resumen"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Resumen
+            </TabsTrigger>
+            <TabsTrigger
+              value="ubicacion"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Ubicacion &amp; Mapa
+            </TabsTrigger>
+            <TabsTrigger
+              value="elementos"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Elementos &amp; Pares
+            </TabsTrigger>
+            <TabsTrigger
+              value="gestion"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Gestion de avance
+            </TabsTrigger>
+            <TabsTrigger
+              value="calidad"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Calidad de datos
+            </TabsTrigger>
+            <TabsTrigger
+              value="timeline"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Linea de tiempo
+            </TabsTrigger>
           </TabsList>
 
           <FiltersBar
             all={withOverrides}
             filtered={filtered}
             options={index.options}
+            filterDefs={index.filterDefs}
             value={filters}
             onChange={setFilters}
           />
@@ -204,7 +259,11 @@ export function Index() {
             )}
             {activeTab === "calidad" && <CalidadTab clashes={filtered} />}
             {activeTab === "timeline" && (
-              <TimelineTab clashes={filtered} snapshots={timelineSnapshots} overrides={state.overrides} />
+              <TimelineTab
+                clashes={filtered}
+                snapshots={timelineSnapshots}
+                overrides={state.overrides}
+              />
             )}
           </Suspense>
         </Tabs>

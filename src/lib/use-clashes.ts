@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Clash, ClashSnapshot } from "./clash-types";
 import type { ClashWorkerRequest, ClashWorkerResponse } from "./clash-worker";
+import type { ProjectConfig } from "./project-config";
 
 // Recursive glob: supports both the old flat src/data/*.xml layout and the new
 // dated src/data/YYMMDD/*.xml snapshot layout.
@@ -54,7 +55,7 @@ function dedupeById(clashes: Clash[]) {
   return Array.from(byId.values());
 }
 
-export function useClashes() {
+export function useClashes(config: ProjectConfig) {
   const [baseSnapshots, setBaseSnapshots] = useState<ClashSnapshot[]>([]);
   const [extra, setExtra] = useState<Clash[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -63,55 +64,58 @@ export function useClashes() {
   const workerRef = useRef<Worker | null>(null);
   const requestIdRef = useRef(0);
 
-  const parseInWorker = useCallback((files: XmlInput[]) => {
-    if (files.length === 0) return Promise.resolve({ clashes: [], errors: [] });
+  const parseInWorker = useCallback(
+    (files: XmlInput[]) => {
+      if (files.length === 0) return Promise.resolve({ clashes: [], errors: [] });
 
-    if (typeof Worker === "undefined") {
-      return import("./clash-parser").then(({ parseClashXml }) => {
-        const clashes: Clash[] = [];
-        const parseErrors: { name: string; message: string }[] = [];
-        for (const file of files) {
-          try {
-            clashes.push(
-              ...parseClashXml(file.xml, file.name).map((clash) => ({
-                ...clash,
-                snapshotKey: file.snapshotKey,
-                snapshotDate: file.snapshotDate,
-              }))
-            );
-          } catch (error) {
-            parseErrors.push({
-              name: file.name,
-              message: error instanceof Error ? error.message : "Parse failed",
-            });
+      if (typeof Worker === "undefined") {
+        return import("./clash-parser").then(({ parseClashXml }) => {
+          const clashes: Clash[] = [];
+          const parseErrors: { name: string; message: string }[] = [];
+          for (const file of files) {
+            try {
+              clashes.push(
+                ...parseClashXml(file.xml, file.name, config).map((clash) => ({
+                  ...clash,
+                  snapshotKey: file.snapshotKey,
+                  snapshotDate: file.snapshotDate,
+                })),
+              );
+            } catch (error) {
+              parseErrors.push({
+                name: file.name,
+                message: error instanceof Error ? error.message : "Parse failed",
+              });
+            }
           }
-        }
-        return { clashes, errors: parseErrors };
-      });
-    }
-
-    if (!workerRef.current) {
-      workerRef.current = new Worker(new URL("./clash-worker.ts", import.meta.url), {
-        type: "module",
-      });
-    }
-
-    const worker = workerRef.current;
-    const id = requestIdRef.current + 1;
-    requestIdRef.current = id;
-
-    return new Promise<{ clashes: Clash[]; errors: { name: string; message: string }[] }>(
-      (resolve) => {
-        const onMessage = (event: MessageEvent<ClashWorkerResponse>) => {
-          if (event.data.id !== id) return;
-          worker.removeEventListener("message", onMessage);
-          resolve({ clashes: event.data.clashes, errors: event.data.errors });
-        };
-        worker.addEventListener("message", onMessage);
-        worker.postMessage({ id, files } satisfies ClashWorkerRequest);
+          return { clashes, errors: parseErrors };
+        });
       }
-    );
-  }, []);
+
+      if (!workerRef.current) {
+        workerRef.current = new Worker(new URL("./clash-worker.ts", import.meta.url), {
+          type: "module",
+        });
+      }
+
+      const worker = workerRef.current;
+      const id = requestIdRef.current + 1;
+      requestIdRef.current = id;
+
+      return new Promise<{ clashes: Clash[]; errors: { name: string; message: string }[] }>(
+        (resolve) => {
+          const onMessage = (event: MessageEvent<ClashWorkerResponse>) => {
+            if (event.data.id !== id) return;
+            worker.removeEventListener("message", onMessage);
+            resolve({ clashes: event.data.clashes, errors: event.data.errors });
+          };
+          worker.addEventListener("message", onMessage);
+          worker.postMessage({ id, files, config } satisfies ClashWorkerRequest);
+        },
+      );
+    },
+    [config],
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -128,7 +132,7 @@ export function useClashes() {
             snapshotKey: snapshot.key,
             snapshotDate: snapshot.date,
           };
-        })
+        }),
       );
       const result = await parseInWorker(files);
       if (cancelled) return;
@@ -140,7 +144,9 @@ export function useClashes() {
 
     loadBase().catch((error) => {
       if (cancelled) return;
-      setErrors([{ name: "src/data", message: error instanceof Error ? error.message : "Load failed" }]);
+      setErrors([
+        { name: "src/data", message: error instanceof Error ? error.message : "Load failed" },
+      ]);
       setIsLoading(false);
       setIsParsing(false);
     });
@@ -164,7 +170,7 @@ export function useClashes() {
         xml: await f.text(),
         snapshotKey: "upload",
         snapshotDate: today,
-      }))
+      })),
     );
     const result = await parseInWorker(loaded);
     setErrors((prev) => [...prev, ...result.errors]);

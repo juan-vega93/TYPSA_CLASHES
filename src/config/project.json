@@ -1,0 +1,81 @@
+{
+  "fields": {
+    "test": {
+      "label": "Test",
+      "sourceXmlTag": null,
+      "type": "string",
+      "filterable": true
+    },
+    "estado": {
+      "label": "Estado",
+      "sourceXmlTag": null,
+      "type": "status",
+      "filterable": true
+    },
+    "severity": {
+      "label": "Severidad",
+      "sourceXmlTag": null,
+      "type": "severity",
+      "filterable": true
+    },
+    "zona": {
+      "label": "Zona",
+      "sourceXmlTag": "Element Zona",
+      "type": "string",
+      "filterable": true
+    },
+    "nivel": {
+      "label": "Nivel",
+      "sourceXmlTag": "Element Nivel",
+      "type": "string",
+      "filterable": true
+    },
+    "volumen": {
+      "label": "Volumen",
+      "sourceXmlTag": "Element Volumen",
+      "type": "string",
+      "filterable": false
+    },
+    "edificio": {
+      "label": "Edificio",
+      "sourceXmlTag": "Element Edificio",
+      "type": "string",
+      "filterable": true
+    },
+    "sector": {
+      "label": "Sector",
+      "sourceXmlTag": "Element Sector",
+      "type": "string",
+      "filterable": true
+    },
+    "categoria": {
+      "label": "Par categ.",
+      "sourceXmlTag": "Element Category",
+      "type": "pair",
+      "filterable": true
+    },
+    "contenedor": {
+      "label": "Contenedor",
+      "sourceXmlTag": "Element Contenedor Origen",
+      "type": "string",
+      "filterable": true
+    },
+    "prioridad": {
+      "label": "Prioridad",
+      "sourceXmlTag": null,
+      "type": "derived",
+      "filterable": true
+    }
+  },
+  "severity": {
+    "high": 0.1,
+    "medium": 0.01
+  },
+  "guidField": "guid",
+  "prioridad": {
+    "source": "testNameAndFileName",
+    "regex": "\\b(P\\d+)(?:[_-]|\\b)",
+    "group": 1,
+    "uppercase": true
+  }
+}

@@ -1,3 +1,5 @@
+import { DEFAULT_PROJECT_CONFIG, severityForConfig } from "./project-config";
+
 export type Severity = "alta" | "media" | "baja";
 export type ClashStatus = "active" | "reviewed" | "approved" | "resolved";
 
@@ -9,12 +11,14 @@ export interface ClashItem {
   edificio?: string;
   zona?: string;
   nivel?: string;
+  volumen?: string;
   sector?: string;
   ambiente?: string;
   codigoAmbiente?: string;
   especialidad?: string;
   idPartida?: string;
   container?: string;
+  filterValues?: Record<string, string>;
   raw?: Record<string, string>;
 }
 
@@ -39,11 +43,13 @@ export interface Clash {
   zona?: string;
   nivel?: string;
   edificio?: string;
+  volumen?: string;
   sector?: string;
   ambiente?: string;
   categoriaPair?: string;
   familyPair?: string;
   typePair?: string;
+  filterValues?: Record<string, string>;
 }
 
 export interface ClashFile {
@@ -59,8 +65,5 @@ export interface ClashSnapshot {
 }
 
 export function severityFor(distanceMeters: number): Severity {
-  const d = Math.abs(distanceMeters);
-  if (d >= 0.1) return "alta";
-  if (d >= 0.01) return "media";
-  return "baja";
+  return severityForConfig(distanceMeters, DEFAULT_PROJECT_CONFIG);
 }
