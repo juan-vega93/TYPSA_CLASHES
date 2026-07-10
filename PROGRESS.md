@@ -64,6 +64,14 @@ Dashboard web para visualizar, filtrar y gestionar clashes BIM de Navisworks/XML
 - `src/config/project.json`
   Configuracion default IREN SUR con tags XML actuales, umbrales 0.1/0.01,
   `guidField: "guid"` y regex `\b(P\d+)(?:[_-]|\b)`.
+- XML Navisworks actual:
+  - El GUID exportado existe solo como atributo del clash: `<clashresult guid="...">`.
+  - Dentro de cada `<clashobject>` no hay `GlobalId`, `IfcGUID`, `Element GUID`,
+    `UniqueId` ni atributo equivalente para identificar individualmente los elementos BIM.
+  - El identificador disponible por elemento es el smarttag `<name>Element Id</name>`,
+    que corresponde al ID de elemento exportado por Navisworks/Revit, no al IFC GlobalId.
+  - Para un visor BIM futuro, si se necesita seleccionar elementos IFC por GUID,
+    habra que incorporar otra fuente/export adicional con el mapeo Revit/Navisworks/IFC.
 - `src/components/dashboard/project-settings-dialog.tsx`
   Modal de configuracion para overrides locales del proyecto.
 - `src/lib/use-clashes.ts`
