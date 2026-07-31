@@ -18,6 +18,11 @@ dist-ssr
 .nitro
 *.local
 
+# XML source files above GitHub's 100 MB hard limit.
+# Keep them locally or move them to external storage/preprocessed data.
+src/data/260731/P2_ARQ-EQM.xml
+src/data/260731/P2_ARQ-EST.xml
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

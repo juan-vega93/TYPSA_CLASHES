@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" units="m" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="m">
+    <clashtests>
+      <clashtest name="P1_ISD-EQM" test_type="clearance" status="ok" tolerance="0.025" merge_composites="0">
+        <linkage mode="none"/>
+        <left>
+          <clashselection selfintersect="0" primtypes="-67109119">
+            <locator>lcop_selection_set_tree/Disciplinas/ISD</locator>
+          </clashselection>
+        </left>
+        <right>
+          <clashselection selfintersect="0" primtypes="-255">
+            <locator>lcop_selection_set_tree/Disciplinas/EQM</locator>
+          </clashselection>
+        </right>
+        <rules/>
+        <clashresults>
+          <clashresult name="Clash2" guid="51da1323-8661-4a26-8895-5b347df41081" status="resolved" distance="-0.056">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229746.891" y="8183595.188" z="2360.258"/>
+            </clashpoint>
+            <gridlocation>H-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="20" hour="20" minute="2" second="20"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Type</name>
+                    <value>TDS_TuberiaDesague_PVC-CP_6&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Source File</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISD-E3-100200.rvt</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>878057</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>21.845 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>6.973 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISD-E3-100200</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N06</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Sanitarias Desagüe</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>TuberiaDesagüe</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Type</name>
+                    <value>M-45_SillónMetálicoSemiconfortableSinPortabrazos3Cuerpos</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Source File</name>
+                    <value>100021-JYS01-105-YYY-MBM-EQM-E3-000001_jjvegaVRG97.rvt</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14895440</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-45_SillónMetálicoSemiconfortableSinPortabrazos3Cuerpos</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N07</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS HOSPITALIZACIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ESTAR DE VISITAS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>HS-7106</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Equipamiento médico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="cc12668c-3cee-4d1b-8169-c60280e03922" status="resolved" distance="-0.044">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229746.891" y="8183595.188" z="2360.258"/>
+            </clashpoint>
+            <gridlocation>H-14 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="20" hour="20" minute="2" second="20"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Type</name>
+                    <value>TDS_TuberiaDesague_PVC-CP_6&quot;</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Source File</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISD-E3-100200.rvt</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>878057</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value>21.845 m</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value>6.973 m²</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-000-ZZZ-MBM-ISD-E3-100200</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Pipes</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>Pipe Types</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N06</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Instalaciones Sanitarias Desagüe</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>TuberiaDesagüe</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>m</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <smarttags>
+                  <smarttag>
+                    <name>Element Type</name>
+                    <value>M-45_SillónMetálicoSemiconfortableSinPortabrazos3Cuerpos</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Source File</name>
+                    <value>100021-JYS01-105-YYY-MBM-EQM-E3-000001_jjvegaVRG97.rvt</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Id</name>
+                    <value>14895440</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Length</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Area</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Volume</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Contenedor Origen</name>
+                    <value>100021-JYS01-105-YYY-MBM-EQM-E3-000001</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Category</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Family</name>
+                    <value>M-45_SillónMetálicoSemiconfortableSinPortabrazos3Cuerpos</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Edificio</name>
+                    <value>BLOQUE C</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Nivel</name>
+                    <value>N07</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Zona</name>
+                    <value>UPSS HOSPITALIZACIÓN</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Ambiente</name>
+                    <value>ESTAR DE VISITAS</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Codigo de ambiente</name>
+                    <value>HS-7106</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Especialidad</name>
+                    <value>Equipamiento médico</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Tipo de elemento</name>
+                    <value>Specialty Equipment</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Sector</name>
+                    <value></value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element ID Partida N°01</name>
+                    <value>--</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Element Unidad Medida N°01</name>
+                    <value>und</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash1" guid="1ed6dd10-c455-4108-9db9-7280dba029b3" status="resolved" distance="0.005">
+            <resultstatus>Resolved</resultstatus>
+            <clashpoint>
+              <pos3f x="229736.865" y="8183655.386" z="2328.171"/>
+            </clashpoint>
+            <gridlocation>K-20 : NS2</gridlocation>
+            <createddate>
+              <date year="2026" month="7" day="7" hour="16" minute="14" second="41"/>
+            </createddate>
+            <clashobjects/>
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>
