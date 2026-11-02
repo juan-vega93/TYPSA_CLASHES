@@ -15,9 +15,15 @@ import {
   getGlobalBounds,
   queryClashes,
   summarizeClashes,
+  compileClashFilter,
   type FilterState,
 } from "@/lib/clash-query";
 import type { Clash } from "@/lib/clash-types";
+import { DEFAULT_COORDINATION_RULES, validCoordinationRules } from "@/lib/coordination-priority";
+import { useStoredState } from "@/lib/use-stored-state";
+import type { PlanningRequest } from "@/lib/coordination-plan";
+import type { HistoryRange } from "@/lib/snapshot-folders";
+import { HistoryRangePicker } from "@/components/dashboard/history-range-picker";
 
 const ResumenTab = lazy(() =>
   import("@/components/dashboard/tab-resumen").then((m) => ({ default: m.ResumenTab })),
@@ -36,6 +42,15 @@ const CalidadTab = lazy(() =>
 );
 const TimelineTab = lazy(() =>
   import("@/components/dashboard/tab-timeline").then((m) => ({ default: m.TimelineTab })),
+);
+const PlanTab = lazy(() =>
+  import("@/components/dashboard/tab-plan").then((m) => ({ default: m.PlanTab })),
+);
+const ImportanciaTab = lazy(() =>
+  import("@/components/dashboard/tab-importancia").then((m) => ({ default: m.ImportanciaTab })),
+);
+const ControlTab = lazy(() =>
+  import("@/components/dashboard/tab-control").then((m) => ({ default: m.ControlTab })),
 );
 
 export const Route = createFileRoute("/")({
@@ -58,7 +73,16 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-type TabId = "resumen" | "ubicacion" | "elementos" | "gestion" | "calidad" | "timeline";
+type TabId =
+  | "resumen"
+  | "ubicacion"
+  | "elementos"
+  | "gestion"
+  | "calidad"
+  | "timeline"
+  | "plan"
+  | "control"
+  | "importancia";
 
 function applyStatusOverrides(
   clashes: Clash[],
@@ -84,13 +108,35 @@ function LoadingPanel() {
 
 export function Index() {
   const { config, hasOverride, saveConfig, restoreDefaults, exportConfig } = useProjectConfig();
-  const { clashes, snapshots, ingestFiles, clearExtras, hasExtras, isLoading, isParsing, errors } =
-    useClashes(config);
+  const [activeTab, setActiveTab] = useState<TabId>("resumen");
+  const [historyRange, setHistoryRange] = useState<HistoryRange>();
+  const historicalTab = activeTab === "timeline" || activeTab === "control" || activeTab === "plan";
+  const {
+    clashes,
+    snapshots,
+    historySnapshots,
+    historyErrors,
+    availableCuts,
+    isHistoryLoading,
+    historyProgress,
+    ingestFiles,
+    clearExtras,
+    hasExtras,
+    isLoading,
+    isParsing,
+    errors,
+  } = useClashes(config, historicalTab ? historyRange : undefined);
   const { data: state, update, reset } = useClashState();
   const [filters, setFilters] = useState<FilterState>({});
   const deferredFilters = useDeferredValue(filters);
-  const [activeTab, setActiveTab] = useState<TabId>("resumen");
   const inputRef = useRef<HTMLInputElement>(null);
+  const priority = useStoredState(
+    "typsa-coordination-rules-v1",
+    DEFAULT_COORDINATION_RULES,
+    validCoordinationRules,
+  );
+  const [planningRequest, setPlanningRequest] = useState<PlanningRequest | null>(null);
+  const [planToOpen, setPlanToOpen] = useState<string | undefined>();
 
   const withOverrides = useMemo(
     () => applyStatusOverrides(clashes, state.overrides),
@@ -100,16 +146,9 @@ export function Index() {
   const filtered = useMemo(() => queryClashes(index, deferredFilters), [index, deferredFilters]);
   const metrics = useMemo(() => summarizeClashes(filtered), [filtered]);
   const globalBounds = useMemo(() => getGlobalBounds(clashes), [clashes]);
-  const timelineSnapshots = useMemo(
-    () =>
-      snapshots.map((snapshot) => ({
-        ...snapshot,
-        clashes: queryClashes(
-          buildClashIndex(applyStatusOverrides(snapshot.clashes, state.overrides), config),
-          deferredFilters,
-        ),
-      })),
-    [snapshots, state.overrides, deferredFilters, config],
+  const timelineFilter = useMemo(
+    () => compileClashFilter(config, deferredFilters),
+    [config, deferredFilters],
   );
 
   return (
@@ -126,6 +165,9 @@ export function Index() {
               <h1 className="text-xl font-bold tracking-tight text-[#c8102e]">AR3173-IREN SUR</h1>
               <p className="text-xs text-muted-foreground">
                 Dashboard de gestion de clashes - {clashes.length} clashes cargados
+                {snapshots.length > 0
+                  ? ` · Corte ${snapshots[snapshots.length - 1].date.split("-").reverse().join("/")}`
+                  : ""}
                 {isLoading || isParsing ? " - procesando XML" : ""}
               </p>
             </div>
@@ -188,10 +230,35 @@ export function Index() {
       </header>
 
       <div className="mx-auto max-w-[1400px] space-y-4 px-6 py-6">
+        {availableCuts.some(
+          (cut) =>
+            cut.date >
+            new Intl.DateTimeFormat("en-CA", {
+              timeZone: "America/Lima",
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+            }).format(new Date()),
+        ) && (
+          <p className="rounded-lg border border-amber-400 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+            Hay carpetas con fechas futuras. Revisa sus nombres AAMMDD: el orden de fechas determina
+            el corte actual y las opciones históricas. No se modifica ni excluye su contenido
+            automáticamente.
+          </p>
+        )}
         {errors.length > 0 && (
-          <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
-            {errors.length} archivo(s) XML no pudieron procesarse. Revisa consola para el detalle.
-          </div>
+          <details className="rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+            <summary className="cursor-pointer">
+              {errors.length} archivo(s) XML no pudieron procesarse. Ver detalle.
+            </summary>
+            <ul className="mt-2 list-disc pl-5">
+              {errors.map((error, index) => (
+                <li key={`${error.name}-${index}`}>
+                  {error.name}: {error.message}
+                </li>
+              ))}
+            </ul>
+          </details>
         )}
 
         <Tabs
@@ -200,6 +267,24 @@ export function Index() {
           className="space-y-4"
         >
           <TabsList className="h-auto flex-wrap justify-start gap-1 rounded-full bg-muted/60 p-1">
+            <TabsTrigger
+              value="control"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Control de compromisos
+            </TabsTrigger>
+            <TabsTrigger
+              value="importancia"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Matriz de importancia
+            </TabsTrigger>
+            <TabsTrigger
+              value="plan"
+              className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
+            >
+              Plan de resolución · Curva S
+            </TabsTrigger>
             <TabsTrigger
               value="resumen"
               className="rounded-full px-4 text-xs data-[state=active]:bg-card data-[state=active]:text-primary data-[state=active]:shadow-sm"
@@ -238,18 +323,102 @@ export function Index() {
             </TabsTrigger>
           </TabsList>
 
-          <FiltersBar
-            all={withOverrides}
-            filtered={filtered}
-            options={index.options}
-            filterDefs={index.filterDefs}
-            value={filters}
-            onChange={setFilters}
-          />
-          <KpiCards allCount={withOverrides.length} metrics={metrics} />
+          {activeTab !== "control" && (
+            <FiltersBar
+              all={withOverrides}
+              filtered={filtered}
+              options={index.options}
+              levelOptions={index.levelOptions}
+              filterDefs={index.filterDefs}
+              value={filters}
+              onChange={setFilters}
+            />
+          )}
+          {activeTab !== "resumen" && activeTab !== "control" && (
+            <KpiCards allCount={withOverrides.length} metrics={metrics} />
+          )}
+          {priority.error && (
+            <p role="alert" className="rounded border border-destructive/30 p-3 text-sm">
+              Categorías de prioridad: {priority.error}
+            </p>
+          )}
 
           <Suspense fallback={<LoadingPanel />}>
-            {activeTab === "resumen" && <ResumenTab clashes={filtered} />}
+            {historicalTab && (
+              <HistoryRangePicker
+                cuts={availableCuts}
+                range={historyRange}
+                onGenerate={setHistoryRange}
+                loading={isHistoryLoading}
+                progress={historyProgress}
+              />
+            )}
+            {historicalTab && !historyRange && (
+              <div className="rounded-xl border bg-card p-6 text-sm text-muted-foreground">
+                Elige inicio y fin y pulsa «Generar período». Se propone el intervalo de los dos
+                cortes más recientes para comenzar con una carga menor.
+              </div>
+            )}
+            {activeTab === "control" && historyRange && (
+              <ControlTab
+                snapshots={historySnapshots}
+                config={config}
+                rules={priority.value}
+                loading={isHistoryLoading}
+                dataErrors={historyErrors.length}
+                onPlan={(id) => {
+                  setPlanningRequest(null);
+                  setPlanToOpen(id);
+                  setActiveTab("plan");
+                }}
+              />
+            )}
+            {activeTab === "importancia" && (
+              <ImportanciaTab
+                clashes={filtered}
+                allClashes={withOverrides}
+                rules={priority.value}
+                onRulesChange={priority.update}
+                onPlan={(rows, label) => {
+                  setPlanToOpen(undefined);
+                  setPlanningRequest({
+                    ids: rows.map((row) => row.id),
+                    label,
+                    revision: Date.now(),
+                  });
+                  setActiveTab("plan");
+                }}
+                filters={deferredFilters}
+                overrides={state.overrides}
+                onUpdate={update}
+                loading={isLoading || isParsing}
+                cutDate={snapshots[snapshots.length - 1]?.date}
+              />
+            )}
+            {activeTab === "plan" && (
+              <PlanTab
+                snapshots={historySnapshots}
+                config={config}
+                historyLoading={isHistoryLoading}
+                clashes={filtered}
+                allClashes={withOverrides}
+                rules={priority.value}
+                request={planningRequest}
+                initialPlanId={planToOpen}
+                filters={deferredFilters}
+                cutDate={snapshots[snapshots.length - 1]?.date}
+                loading={isLoading || isParsing}
+              />
+            )}
+            {activeTab === "resumen" && (
+              <ResumenTab
+                clashes={filtered}
+                allCount={withOverrides.length}
+                rules={priority.value}
+                cutDate={snapshots[snapshots.length - 1]?.date}
+                onConfigure={() => setActiveTab("importancia")}
+              />
+            )}
             {activeTab === "ubicacion" && (
               <UbicacionTab clashes={filtered} globalBounds={globalBounds} />
             )}
@@ -258,10 +427,12 @@ export function Index() {
               <GestionTab clashes={filtered} overrides={state.overrides} onUpdate={update} />
             )}
             {activeTab === "calidad" && <CalidadTab clashes={filtered} />}
-            {activeTab === "timeline" && (
+            {activeTab === "timeline" && historyRange && (
               <TimelineTab
                 clashes={filtered}
-                snapshots={timelineSnapshots}
+                snapshots={historySnapshots}
+                include={timelineFilter}
+                loading={isHistoryLoading}
                 overrides={state.overrides}
               />
             )}

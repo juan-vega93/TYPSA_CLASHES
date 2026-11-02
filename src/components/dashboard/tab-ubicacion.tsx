@@ -37,7 +37,9 @@ export function UbicacionTab({
       if (c.zona) zSet.set(c.zona, (zSet.get(c.zona) ?? 0) + 1);
       if (c.nivel) nSet.set(c.nivel, (nSet.get(c.nivel) ?? 0) + 1);
     }
-    const zonas = Array.from(zSet.keys()).sort((a, b) => (zSet.get(b)! - zSet.get(a)!)).slice(0, 14);
+    const zonas = Array.from(zSet.keys())
+      .sort((a, b) => zSet.get(b)! - zSet.get(a)!)
+      .slice(0, 14);
     const niveles = Array.from(nSet.keys()).sort();
     const matrix: number[][] = zonas.map(() => niveles.map(() => 0));
     const zonaIndex = new Map(zonas.map((z, i) => [z, i]));
@@ -60,16 +62,16 @@ export function UbicacionTab({
     const step = Math.max(1, Math.ceil(points.length / MAX_SCATTER_POINTS));
     const sampled = step === 1 ? points : points.filter((_, index) => index % step === 0);
     return sampled.map((c) => ({
-        x: c.pos.x,
-        y: c.pos.y,
-        z: Math.max(6, c.distance * 300),
-        severity: c.severity,
-        name: c.name,
-        zona: c.zona,
-        nivel: c.nivel,
-        edificio: c.edificio,
-        file: c.file,
-      }));
+      x: c.pos.x,
+      y: c.pos.y,
+      z: Math.max(6, c.distance * 300),
+      severity: c.severity,
+      name: c.name,
+      zona: c.zona,
+      nivel: c.nivel,
+      edificio: c.edificio,
+      file: c.file,
+    }));
   }, [clashes]);
 
   const scatterBySeverity = useMemo(() => {
@@ -104,12 +106,17 @@ export function UbicacionTab({
 
   // allow user to choose whether to use global bounds (points fixed) or per-filter bounds
   const [useGlobal, setUseGlobal] = useState(true);
-  const [overrideBounds, setOverrideBounds] = useState<{ xMin: number; xMax: number; yMin: number; yMax: number } | null>(null);
+  const [overrideBounds, setOverrideBounds] = useState<{
+    xMin: number;
+    xMax: number;
+    yMin: number;
+    yMax: number;
+  } | null>(null);
 
   // initialize override to global on first load
   useEffect(() => {
     setOverrideBounds(globalBounds);
-  }, [globalBounds.xMin, globalBounds.xMax, globalBounds.yMin, globalBounds.yMax]);
+  }, [globalBounds]);
 
   const activeBounds = useMemo(() => {
     if (useGlobal) return overrideBounds ?? globalBounds;
@@ -173,7 +180,11 @@ export function UbicacionTab({
         <div className="space-y-2">
           <div className="flex items-center gap-3 text-sm">
             <label className="inline-flex items-center gap-2">
-              <input type="checkbox" checked={useGlobal} onChange={(e) => setUseGlobal(e.target.checked)} />
+              <input
+                type="checkbox"
+                checked={useGlobal}
+                onChange={(e) => setUseGlobal(e.target.checked)}
+              />
               <span>Usar límites globales (fijar ubicación)</span>
             </label>
             <div className="ml-4 grid grid-cols-2 gap-2">
@@ -182,7 +193,12 @@ export function UbicacionTab({
                 <input
                   className="w-full rounded border px-2 py-1 text-xs"
                   value={overrideBounds?.xMin ?? activeBounds.xMin}
-                  onChange={(e) => setOverrideBounds({ ...(overrideBounds ?? activeBounds), xMin: Number(e.target.value) })}
+                  onChange={(e) =>
+                    setOverrideBounds({
+                      ...(overrideBounds ?? activeBounds),
+                      xMin: Number(e.target.value),
+                    })
+                  }
                 />
               </label>
               <label className="flex items-center gap-2 text-muted-foreground">
@@ -190,7 +206,12 @@ export function UbicacionTab({
                 <input
                   className="w-full rounded border px-2 py-1 text-xs"
                   value={overrideBounds?.xMax ?? activeBounds.xMax}
-                  onChange={(e) => setOverrideBounds({ ...(overrideBounds ?? activeBounds), xMax: Number(e.target.value) })}
+                  onChange={(e) =>
+                    setOverrideBounds({
+                      ...(overrideBounds ?? activeBounds),
+                      xMax: Number(e.target.value),
+                    })
+                  }
                 />
               </label>
               <label className="flex items-center gap-2 text-muted-foreground">
@@ -198,7 +219,12 @@ export function UbicacionTab({
                 <input
                   className="w-full rounded border px-2 py-1 text-xs"
                   value={overrideBounds?.yMin ?? activeBounds.yMin}
-                  onChange={(e) => setOverrideBounds({ ...(overrideBounds ?? activeBounds), yMin: Number(e.target.value) })}
+                  onChange={(e) =>
+                    setOverrideBounds({
+                      ...(overrideBounds ?? activeBounds),
+                      yMin: Number(e.target.value),
+                    })
+                  }
                 />
               </label>
               <label className="flex items-center gap-2 text-muted-foreground">
@@ -206,7 +232,12 @@ export function UbicacionTab({
                 <input
                   className="w-full rounded border px-2 py-1 text-xs"
                   value={overrideBounds?.yMax ?? activeBounds.yMax}
-                  onChange={(e) => setOverrideBounds({ ...(overrideBounds ?? activeBounds), yMax: Number(e.target.value) })}
+                  onChange={(e) =>
+                    setOverrideBounds({
+                      ...(overrideBounds ?? activeBounds),
+                      yMax: Number(e.target.value),
+                    })
+                  }
                 />
               </label>
             </div>
@@ -246,7 +277,13 @@ export function UbicacionTab({
                 {(["alta", "media", "baja"] as const).map((sev) => {
                   const data = scatterBySeverity[sev];
                   return (
-                    <Scatter key={sev} name={sev.toUpperCase()} data={data} fill={SEV_COLORS[sev]} fillOpacity={0.9} />
+                    <Scatter
+                      key={sev}
+                      name={sev.toUpperCase()}
+                      data={data}
+                      fill={SEV_COLORS[sev]}
+                      fillOpacity={0.9}
+                    />
                   );
                 })}
               </ScatterChart>
@@ -258,8 +295,19 @@ export function UbicacionTab({
   );
 }
 
-function CustomTooltip({ active, payload }: any) {
-  if (!active || !payload || payload.length === 0) return null;
+function CustomTooltip({
+  active,
+  payload,
+}: {
+  active?: boolean;
+  payload?: {
+    payload?: Pick<Clash, "name" | "edificio" | "zona" | "nivel" | "file"> & {
+      x: number;
+      y: number;
+    };
+  }[];
+}) {
+  if (!active || !payload?.[0]?.payload) return null;
   const p = payload[0].payload;
   return (
     <div className="rounded-md bg-card p-2 text-xs shadow">

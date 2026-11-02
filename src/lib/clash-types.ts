@@ -11,6 +11,8 @@ export interface ClashItem {
   edificio?: string;
   zona?: string;
   nivel?: string;
+  nivelSource?: "property" | "reference" | "layer";
+  nivelRaw?: string;
   volumen?: string;
   sector?: string;
   ambiente?: string;
@@ -23,7 +25,10 @@ export interface ClashItem {
 }
 
 export interface Clash {
+  /** Precomputed only for compact historical records. */
+  searchText?: string;
   id: string;
+  kind?: "clash" | "group";
   name: string;
   test: string;
   file: string;
@@ -32,6 +37,9 @@ export interface Clash {
   snapshotKey?: string;
   snapshotDate?: string;
   status: ClashStatus;
+  sourceStatus?: string;
+  testType?: string;
+  testTolerance?: number;
   distance: number; // penetration in meters (absolute)
   signedDistance: number;
   severity: Severity;

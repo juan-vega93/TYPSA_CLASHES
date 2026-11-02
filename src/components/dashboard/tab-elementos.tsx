@@ -30,10 +30,7 @@ function Ranking({ data, max }: { data: { label: string; count: number }[]; max:
               <span className="font-semibold tabular-nums text-foreground">{d.count}</span>
             </div>
             <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-              <div
-                className="h-full rounded-full bg-primary"
-                style={{ width: `${w}%` }}
-              />
+              <div className="h-full rounded-full bg-primary" style={{ width: `${w}%` }} />
             </div>
           </div>
         );
@@ -48,12 +45,21 @@ export function ElementosTab({ clashes }: { clashes: Clash[] }) {
   const fams = useMemo(() => topPairs(clashes, "familyPair"), [clashes]);
 
   const topIds = useMemo(() => {
-    const m = new Map<string, { count: number; maxPen: number; family?: string; category?: string; type?: string }>();
+    const m = new Map<
+      string,
+      { count: number; maxPen: number; family?: string; category?: string; type?: string }
+    >();
     for (const c of clashes) {
       for (const it of c.items) {
         const id = it.elementId;
         if (!id) continue;
-        const cur = m.get(id) ?? { count: 0, maxPen: 0, family: it.family, category: it.category, type: it.type };
+        const cur = m.get(id) ?? {
+          count: 0,
+          maxPen: 0,
+          family: it.family,
+          category: it.category,
+          type: it.type,
+        };
         cur.count += 1;
         if (c.distance > cur.maxPen) cur.maxPen = c.distance;
         m.set(id, cur);

@@ -80,7 +80,9 @@ export function ProjectSettingsDialog({
         <DialogHeader>
           <DialogTitle>Configuracion del proyecto</DialogTitle>
           <DialogDescription>
-            Los cambios se guardan como override local y se aplican al dashboard actual.
+            Los cambios se guardan como override local y se aplican al dashboard actual. Los nombres
+            equivalentes de Navisworks en inglés y español se reconocen automáticamente (Element /
+            Elemento / Componente). Los valores vacíos en el XML permanecen sin dato.
           </DialogDescription>
         </DialogHeader>
 

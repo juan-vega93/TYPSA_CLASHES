@@ -1,0 +1,39 @@
+Compatibilidad de Navisworks ES / EN
+
+Resultado verificado con P1_EST-ACI_nuevo.xml:
+  Total: 3020; nuevos/pendientes: 1778; resueltos: 1242.
+  El atributo status conserva los códigos new/resolved en inglés.
+  resultstatus contiene las etiquetas Nuevo/Resuelto en español.
+  El dashboard usa primero el código de status y reconoce ambos idiomas.
+
+No es necesario volver a Navisworks en inglés ni renombrar manualmente el XML.
+El dashboard reconoce Element / Elemento / Componente y Category / Categoría,
+Family / Familia, Volume / Volumen. También lee el ID desde objectattribute.
+Los nombres personalizados configurados tienen prioridad cuando aportan un valor.
+
+Pasos para recuperar las propiedades ausentes:
+1. Seleccionar un elemento EST y uno ACI en Navisworks y comprobar sus propiedades.
+2. En propiedades rápidas, elegir cada propiedad desde la lista real del modelo.
+   Revisar Contenedor Origen, Edificio, Zona, Sector, Ambiente y Tipo de elemento.
+   Si el valor no existe en el modelo, corregirlo en el modelo de origen y actualizar
+   el vínculo antes de volver a exportar. El dashboard no puede reconstruirlo.
+3. Revisar ID Partida N°01 y Unidad Medida N°01. El archivo de parámetros recibido
+   tiene N?01 en sus identificadores internos. Volver a seleccionarlos y exportar
+   la configuración desde Navisworks para obtener los identificadores reales.
+4. Generar el informe XML del test completo, incluyendo todos sus estados y las
+   propiedades/IDs de los objetos disponibles. Comprobar el resumen del XML.
+5. Cargar el informe con Cargar más o actualizar el XML del corte correspondiente.
+   Una carga del mismo test sustituye su versión previa en la sesión, incluidos
+   cambios de estado de GUID existentes; los demás tests permanecen presentes.
+
+Diagnóstico del XML nuevo:
+  Zona, edificio, sector, contenedor, ambiente, especialidad y tipo de elemento
+  no tienen valores en las propiedades rápidas recibidas.
+  612 resultados no contienen objetos. Se conserva su estado y no se inventan IDs.
+  No se exporta diámetro: todavía no permite acreditar excepciones de tuberías <2".
+  Los estados editados manualmente en el dashboard siguen teniendo prioridad local.
+  Las cargas mediante Cargar más duran la sesión del navegador.
+
+Compatibilidad del histórico comprobada:
+  src/data/260707/P1_EST-ACI.xml: 319 resultados; 305 activos y 14 resueltos.
+  Son cortes diferentes; sus totales no tienen por qué coincidir.

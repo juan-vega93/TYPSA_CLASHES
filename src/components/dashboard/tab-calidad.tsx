@@ -19,9 +19,8 @@ export function CalidadTab({ clashes }: { clashes: Clash[] }) {
     // objetos por par
     const objetos = clashes.length * 2;
     const withId = clashes.reduce(
-      (s, c) =>
-        s + (c.items[0].elementId ? 1 : 0) + (c.items[1].elementId ? 1 : 0),
-      0
+      (s, c) => s + (c.items[0].elementId ? 1 : 0) + (c.items[1].elementId ? 1 : 0),
+      0,
     );
     const withPartida = clashes.reduce((s, c) => s + (c.items[0].idPartida ? 1 : 0), 0);
 
@@ -35,7 +34,7 @@ export function CalidadTab({ clashes }: { clashes: Clash[] }) {
       clashes.reduce((m, c) => {
         m.set(c.file, (m.get(c.file) ?? 0) + 1);
         return m;
-      }, new Map<string, number>())
+      }, new Map<string, number>()),
     );
 
     return {
@@ -51,7 +50,11 @@ export function CalidadTab({ clashes }: { clashes: Clash[] }) {
     <>
       <div className="mb-4 grid grid-cols-2 gap-4 md:grid-cols-4">
         <MetaCard label="Objetos" value={kpi.objetos} hint="2 por clash" />
-        <MetaCard label="Con Element ID" value={kpi.withId} hint={`${pct(kpi.withId, kpi.objetos)}%`} />
+        <MetaCard
+          label="Con Element ID"
+          value={kpi.withId}
+          hint={`${pct(kpi.withId, kpi.objetos)}%`}
+        />
         <MetaCard label="Sin Element ID" value={kpi.sinId} hint="No identificables en Revit" />
         <MetaCard label="Con ID partida" value={kpi.withPartida} hint="Vinculados a partida" />
       </div>
@@ -76,17 +79,18 @@ export function CalidadTab({ clashes }: { clashes: Clash[] }) {
           </div>
         </Panel>
 
-        <Panel title="Diagnóstico de carga">
+        <Panel
+          title="Diagnóstico de carga"
+          subtitle={`${clashes.filter((clash) => clash.kind === "group").length} grupos de Navisworks incluidos. Cada grupo cuenta como un resultado, igual que en el resumen del XML; no se suman sus hijos otra vez.`}
+        >
           <div className="rounded-md border bg-muted/40 p-4 font-mono text-xs leading-relaxed text-muted-foreground">
-            {filesLog.length === 0 ? (
-              "Sin archivos cargados."
-            ) : (
-              filesLog.map(([name, n]) => (
-                <div key={name}>
-                  <span className="text-foreground">{name}.xml</span>: {n} clashes
-                </div>
-              ))
-            )}
+            {filesLog.length === 0
+              ? "Sin archivos cargados."
+              : filesLog.map(([name, n]) => (
+                  <div key={name}>
+                    <span className="text-foreground">{name}.xml</span>: {n} clashes
+                  </div>
+                ))}
           </div>
         </Panel>
       </div>

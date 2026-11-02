@@ -1,45 +1,16 @@
 import { memo } from "react";
-import {
-  Activity,
-  AlertTriangle,
-  Building2,
-  Filter,
-  Flag,
-  Grid,
-  Layers,
-  MapPin,
-  Package,
-  ShieldCheck,
-  SlidersHorizontal,
-} from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Filter, SlidersHorizontal } from "lucide-react";
 import type { Clash } from "@/lib/clash-types";
-import type { FilterState, RuntimeFilterDef } from "@/lib/clash-query";
-
-const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-  test: Activity,
-  status: ShieldCheck,
-  severity: AlertTriangle,
-  zona: MapPin,
-  nivel: Building2,
-  edificio: Layers,
-  sector: Grid,
-  categoria: Activity,
-  contenedor: Package,
-  prioridad: Flag,
-};
-
+import type { FilterState, RuntimeFilterDef, LevelSource } from "@/lib/clash-query";
+import { LevelFilter } from "./level-filter";
+import { CheckboxFilter } from "./checkbox-filter";
+import { Button } from "@/components/ui/button";
 export const FiltersBar = memo(function FiltersBar({
   all,
   filtered,
   options,
   filterDefs,
+  levelOptions,
   value,
   onChange,
 }: {
@@ -47,46 +18,67 @@ export const FiltersBar = memo(function FiltersBar({
   filtered: Clash[];
   options: Record<string, string[]>;
   filterDefs: RuntimeFilterDef[];
+  levelOptions: Record<LevelSource, string[]>;
   value: FilterState;
-  onChange: (v: FilterState) => void;
+  onChange: (value: FilterState) => void;
 }) {
-  const activeCount = filterDefs.filter((d) => {
-    const v = value[d.key];
-    return v && v !== "__all__";
-  }).length;
-
+  const activeCount = filterDefs.filter(
+    (field) =>
+      value[field.key] !== undefined && value[field.key] !== "__all__" && value[field.key] !== "",
+  ).length;
   return (
     <div className="rounded-xl border bg-card p-4 shadow-[var(--shadow-soft)]">
-      <div className="mb-3 flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-        <Filter className="h-3.5 w-3.5" />
-        Filtros - {activeCount} activo(s) - {filtered.length} / {all.length} clashes
+      <div className="mb-3 flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground">
+        <Filter className="h-4 w-4" />
+        Filtros · {activeCount} activos · {filtered.length} / {all.length} resultados
+        {(activeCount > 0 || value.search) && (
+          <Button
+            variant="ghost"
+            size="sm"
+            className="ml-auto h-6 normal-case"
+            onClick={() => onChange({})}
+          >
+            Limpiar filtros
+          </Button>
+        )}
       </div>
       <div className="flex flex-wrap gap-2">
-        {filterDefs.map((d) => {
-          const Icon = ICONS[d.key] ?? SlidersHorizontal;
-          const opts = options[d.key] ?? [];
-          const v = value[d.key] ?? "__all__";
+        {filterDefs.map((field) => {
+          if (field.key === "nivel")
+            return Object.values(levelOptions).some((values) =>
+              values.some((item) => item !== "__missing_level__"),
+            ) ? (
+              <LevelFilter
+                key={field.key}
+                label={field.label}
+                value={value}
+                options={levelOptions}
+                onChange={onChange}
+              />
+            ) : null;
+          const values = (options[field.key] ?? []).filter(
+            (item) => item.trim() && !/^sin(?: vs sin)?$/i.test(item),
+          );
+          if (!values.length) return null;
           return (
-            <Select
-              key={d.key}
-              value={v}
-              onValueChange={(next) => onChange({ ...value, [d.key]: next })}
-            >
-              <SelectTrigger className="h-9 w-[150px] rounded-full border-border/70 bg-background/60 text-sm">
-                <SelectValue placeholder={d.label}>
-                  <Icon className="mr-1 h-4 w-4 text-muted-foreground" />
-                  {d.label}
-                </SelectValue>
-              </SelectTrigger>
-              <SelectContent className="max-h-72">
-                <SelectItem value="__all__">Todos</SelectItem>
-                {opts.map((o) => (
-                  <SelectItem key={o} value={o}>
-                    {o}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <CheckboxFilter
+              key={field.key}
+              label={field.label}
+              options={values}
+              value={value[field.key]}
+              onChange={(next) => onChange({ ...value, [field.key]: next })}
+              icon={<SlidersHorizontal className="h-4 w-4 shrink-0" />}
+              display={(item) =>
+                field.key === "status"
+                  ? ({
+                      active: "Activo / nuevo",
+                      reviewed: "Revisado",
+                      approved: "Aprobado",
+                      resolved: "Resuelto",
+                    }[item] ?? item)
+                  : item
+              }
+            />
           );
         })}
       </div>

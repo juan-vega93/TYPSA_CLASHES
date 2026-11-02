@@ -38,12 +38,42 @@ export const KpiCards = memo(function KpiCards({
 
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-      <Card label="Total Clashes" value={String(metrics.total)} hint={`${allCount} sin filtros`} icon={Layers} />
-      <Card label="Pendientes" value={String(metrics.pending)} hint={`${pct(metrics.pending)} del filtrado`} icon={Clock} />
-      <Card label="Resueltos / Aprob." value={String(metrics.resolved)} hint={`${pct(metrics.resolved)} del filtrado`} icon={CheckCircle2} />
-      <Card label="Severidad Alta" value={String(metrics.alta)} hint="Penetracion >= 0.10 m" icon={AlertTriangle} />
-      <Card label="Penetracion prom." value={`${metrics.avgPen.toFixed(3)} m`} hint="|valor absoluto|" icon={Ruler} />
-      <Card label="Element IDs reales" value={String(metrics.withElementId)} hint="Identificables en Revit" icon={Boxes} />
+      <Card
+        label="Total Clashes"
+        value={String(metrics.total)}
+        hint={`${allCount} sin filtros`}
+        icon={Layers}
+      />
+      <Card
+        label="Pendientes"
+        value={String(metrics.pending)}
+        hint={`${pct(metrics.pending)} del filtrado`}
+        icon={Clock}
+      />
+      <Card
+        label="Resueltos / Aprob."
+        value={String(metrics.resolved)}
+        hint={`${pct(metrics.resolved)} del filtrado`}
+        icon={CheckCircle2}
+      />
+      <Card
+        label="Severidad Alta"
+        value={String(metrics.alta)}
+        hint="Penetracion >= 0.10 m"
+        icon={AlertTriangle}
+      />
+      <Card
+        label="Penetracion prom."
+        value={`${metrics.avgPen.toFixed(3)} m`}
+        hint="|valor absoluto|"
+        icon={Ruler}
+      />
+      <Card
+        label="Element IDs reales"
+        value={String(metrics.withElementId)}
+        hint="Identificables en Revit"
+        icon={Boxes}
+      />
     </div>
   );
 });

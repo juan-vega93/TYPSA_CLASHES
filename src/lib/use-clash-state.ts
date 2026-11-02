@@ -37,10 +37,10 @@ export function useClashState() {
     setData((prev) => {
       const cur = prev.overrides[id] ?? {};
       const merged = { ...cur, ...patch };
-      if (patch.status && patch.status !== "active" && !merged.resolvedAt) {
+      if ((patch.status === "approved" || patch.status === "resolved") && !merged.resolvedAt) {
         merged.resolvedAt = new Date().toISOString();
       }
-      if (patch.status === "active") {
+      if (patch.status === "active" || patch.status === "reviewed") {
         delete merged.resolvedAt;
       }
       return { ...prev, overrides: { ...prev.overrides, [id]: merged } };

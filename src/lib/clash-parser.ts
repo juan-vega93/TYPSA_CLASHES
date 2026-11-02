@@ -1,5 +1,7 @@
 import { XMLParser } from "fast-xml-parser";
-import { type Clash, type ClashItem, type ClashStatus } from "./clash-types";
+import { type Clash, type ClashItem } from "./clash-types";
+import { createNavisworksTagReader, navisworksStatus, navisworksTag } from "./navisworks-values";
+import { normalizeLevel } from "./clash-levels";
 import {
   DEFAULT_PROJECT_CONFIG,
   getProjectFieldTag,
@@ -13,7 +15,16 @@ const parser = new XMLParser({
   attributeNamePrefix: "",
   allowBooleanAttributes: true,
   parseAttributeValue: true,
-  isArray: (name) => ["clashresult", "clashtest", "clashobject", "smarttag"].includes(name),
+  parseTagValue: false,
+  isArray: (name) =>
+    [
+      "clashresult",
+      "clashgroup",
+      "clashtest",
+      "clashobject",
+      "smarttag",
+      "objectattribute",
+    ].includes(name),
 });
 
 function asArr<T>(v: T | T[] | undefined): T[] {
@@ -21,7 +32,25 @@ function asArr<T>(v: T | T[] | undefined): T[] {
   return Array.isArray(v) ? v : [v];
 }
 
-function tagsToMap(smarttags: any): Record<string, string> {
+interface XmlProperty {
+  name?: string;
+  value?: string | number;
+}
+interface XmlObject {
+  smarttags?: { smarttag?: XmlProperty | XmlProperty[] };
+  objectattribute?: XmlProperty | XmlProperty[];
+  layer?: string;
+}
+interface XmlDate {
+  year?: number | string;
+  month?: number | string;
+  day?: number | string;
+  hour?: number | string;
+  minute?: number | string;
+  second?: number | string;
+}
+
+function tagsToMap(smarttags: XmlObject["smarttags"]): Record<string, string> {
   const map: Record<string, string> = {};
   for (const t of asArr(smarttags?.smarttag)) {
     const name = String(t?.name ?? "").trim();
@@ -31,34 +60,58 @@ function tagsToMap(smarttags: any): Record<string, string> {
   return map;
 }
 
-function configuredValue(tags: Record<string, string>, sourceXmlTag: string) {
-  const value = tags[sourceXmlTag];
-  return value && value.trim() ? value : undefined;
-}
-
 function firstTagContaining(tags: Record<string, string>, text: string) {
-  const match = Object.entries(tags).find(([key, value]) => key.includes(text) && value.trim());
+  const match = Object.entries(tags).find(
+    ([key, value]) =>
+      key.replace(/^(Elemento|Componente) /, "Element ").includes(text) && value.trim(),
+  );
   return match?.[1];
 }
 
-function buildItem(clashObj: any, config: ProjectConfig): ClashItem {
+function buildItem(
+  clashObj: XmlObject | undefined,
+  config: ProjectConfig,
+  runtimeFilterFields: ReturnType<typeof getRuntimeFilterFields>,
+): ClashItem {
   const tags = tagsToMap(clashObj?.smarttags);
-  const get = (k: string) => (tags[k] ? tags[k] : undefined);
-  const runtimeFilterFields = getRuntimeFilterFields(config);
+  const get = createNavisworksTagReader(tags);
+  const objectId = asArr(clashObj?.objectattribute).find((attribute) =>
+    navisworksTag(
+      { [String(attribute?.name ?? "")]: String(attribute?.value ?? "") },
+      "Element Id",
+    ),
+  ) as { value?: string | number } | undefined;
   const filterValues = Object.fromEntries(
     runtimeFilterFields
-      .map((field) => [field.key, configuredValue(tags, field.sourceXmlTag)] as const)
+      .map((field) => {
+        const value = get(field.sourceXmlTag);
+        return [field.key, field.key === "nivel" ? normalizeLevel(value) : value] as const;
+      })
       .filter(([, value]) => value),
   ) as Record<string, string>;
+  // A Navisworks layer is independent of the Revit level. Do not infer a
+  // missing level from it: that changes the population selected by level.
+  const candidates = [
+    { raw: get(getProjectFieldTag(config, "nivel")), source: "property" as const },
+  ];
+  const level = candidates.find((candidate) => normalizeLevel(candidate.raw));
+  const nivel = normalizeLevel(level?.raw);
+  // Keep the filter and displayed level aligned with the exported property.
+  if (nivel) filterValues.nivel = nivel;
 
   return {
-    elementId: get("Element ID elemento") || get("Element Id"),
+    elementId:
+      get("Element ID elemento") ||
+      get("Element Id") ||
+      (objectId?.value != null ? String(objectId.value) : undefined),
     category: get(getProjectFieldTag(config, "categoria")),
     family: get("Element Family"),
     type: get("Element Tipo de elemento"),
     edificio: filterValues.edificio || get(getProjectFieldTag(config, "edificio")),
     zona: filterValues.zona || get(getProjectFieldTag(config, "zona")),
-    nivel: filterValues.nivel || get(getProjectFieldTag(config, "nivel")),
+    nivel,
+    nivelSource: level?.source,
+    nivelRaw: level?.raw,
     volumen: get(getProjectFieldTag(config, "volumen")),
     sector: filterValues.sector || get(getProjectFieldTag(config, "sector")),
     ambiente: get("Element Ambiente"),
@@ -71,15 +124,7 @@ function buildItem(clashObj: any, config: ProjectConfig): ClashItem {
   };
 }
 
-function parseStatus(s: string): ClashStatus {
-  const v = String(s || "").toLowerCase();
-  if (v.includes("resolv")) return "resolved";
-  if (v.includes("approv")) return "approved";
-  if (v.includes("review")) return "reviewed";
-  return "active";
-}
-
-function dateToIso(d: any): string {
+function dateToIso(d: XmlDate | undefined): string {
   if (!d) return new Date().toISOString();
   const y = Number(d.year);
   const m = Number(d.month);
@@ -121,20 +166,32 @@ export function parseClashXml(
   const doc = parser.parse(xml);
   const tests = asArr(doc?.exchange?.batchtest?.clashtests?.clashtest);
   const out: Clash[] = [];
+  const runtimeFilterFields = getRuntimeFilterFields(config);
   for (const test of tests) {
     const testName = String(test?.name ?? "Test");
-    const results = asArr(test?.clashresults?.clashresult);
-    for (const r of results) {
+    // Navisworks counts each top-level group as one result in its summary.
+    // Keep that unit instead of dropping groups or counting their children twice.
+    const results = [
+      ...asArr(test?.clashresults?.clashresult).map((result) => ({
+        result,
+        kind: "clash" as const,
+      })),
+      ...asArr(test?.clashresults?.clashgroup).map((result) => ({
+        result,
+        kind: "group" as const,
+      })),
+    ];
+    for (const { result: r, kind } of results) {
       const guid = String(r?.[config.guidField] ?? r?.guid ?? `${testName}-${r?.name}`);
       const signed = Number(r?.distance ?? 0) || 0;
       const dist = Math.abs(signed);
       const objs = asArr(r?.clashobjects?.clashobject);
       const items: [ClashItem, ClashItem] = [
-        buildItem(objs[0], config),
-        buildItem(objs[1] ?? objs[0], config),
+        buildItem(objs[0], config, runtimeFilterFields),
+        buildItem(objs[1], config, runtimeFilterFields),
       ];
       const pos = r?.clashpoint?.pos3f ?? {};
-      const status = parseStatus(String(r?.resultstatus ?? r?.status ?? "active"));
+      const status = navisworksStatus(r?.status, r?.resultstatus);
       const zona = items[0].zona || items[1].zona;
       const nivel = items[0].nivel || items[1].nivel;
       const edificio = items[0].edificio || items[1].edificio;
@@ -142,7 +199,6 @@ export function parseClashXml(
       const sector = items[0].sector || items[1].sector;
       const ambiente = items[0].ambiente || items[1].ambiente;
       const contenedor = items[0].container || items[1].container;
-      const runtimeFilterFields = getRuntimeFilterFields(config);
       const filterValues = Object.fromEntries(
         runtimeFilterFields
           .map(
@@ -157,12 +213,16 @@ export function parseClashXml(
 
       out.push({
         id: guid,
+        kind,
         name: String(r?.name ?? guid),
         test: testName,
         file: fileName,
         prioridad: parsePriority(testName, fileName, contenedor, config),
         contenedor,
         status,
+        sourceStatus: String(r?.status ?? r?.resultstatus ?? ""),
+        testType: String(test?.test_type ?? ""),
+        testTolerance: Number(test?.tolerance ?? 0),
         distance: dist,
         signedDistance: signed,
         severity: severityForConfig(dist, config),

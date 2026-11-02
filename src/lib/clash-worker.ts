@@ -1,11 +1,19 @@
 import { parseClashXml } from "./clash-parser";
 import type { Clash } from "./clash-types";
 import type { ProjectConfig } from "./project-config";
+import { compactClash } from "./compact-clash";
 
 export type ClashWorkerRequest = {
   id: number;
   config: ProjectConfig;
-  files: { name: string; xml: string; snapshotKey?: string; snapshotDate?: string }[];
+  compact?: boolean;
+  files: {
+    name: string;
+    xml?: string;
+    url?: string;
+    snapshotKey?: string;
+    snapshotDate?: string;
+  }[];
 };
 
 export type ClashWorkerResponse = {
@@ -14,17 +22,24 @@ export type ClashWorkerResponse = {
   errors: { name: string; message: string }[];
 };
 
-self.onmessage = (event: MessageEvent<ClashWorkerRequest>) => {
-  const { id, files, config } = event.data;
+self.onmessage = async (event: MessageEvent<ClashWorkerRequest>) => {
+  const { id, files, config, compact } = event.data;
   const clashes: Clash[] = [];
   const errors: ClashWorkerResponse["errors"] = [];
 
   for (const file of files) {
     try {
-      const parsed = parseClashXml(file.xml, file.name.replace(/\.xml$/i, ""), config);
+      let xml = file.xml;
+      if (xml === undefined && file.url) {
+        const response = await fetch(file.url);
+        if (!response.ok) throw Error(`No se pudo descargar el XML (${response.status})`);
+        xml = await response.text();
+      }
+      if (xml === undefined) throw Error("Falta el contenido XML");
+      const parsed = parseClashXml(xml, file.name.replace(/\.xml$/i, ""), config);
       clashes.push(
         ...parsed.map((clash) => ({
-          ...clash,
+          ...(compact ? compactClash(clash) : clash),
           snapshotKey: file.snapshotKey,
           snapshotDate: file.snapshotDate,
         })),

@@ -1,8 +1,14 @@
 import type { Clash, ClashStatus, Severity } from "./clash-types";
 import { getProjectField, getRuntimeFilterFields, type ProjectConfig } from "./project-config";
+import { normalizeLevel } from "./clash-levels";
+import { clashIdentity } from "./commitment-control";
 
-export interface FilterState extends Record<string, string | undefined> {
+export type LevelSource = "primary" | "a" | "b" | "either";
+export const MISSING_LEVEL = "__missing_level__";
+export interface FilterState extends Record<string, string | string[] | undefined> {
   search?: string;
+  nivel?: string | string[];
+  nivelSource?: LevelSource;
 }
 
 export type FilterKey = string;
@@ -47,7 +53,10 @@ function fieldFilterDef(
   return {
     key,
     label: field.label,
-    get: (c) => c.filterValues?.[key] || fallback(c),
+    get: (c) => {
+      const value = c.filterValues?.[key] || fallback(c);
+      return key === "nivel" ? normalizeLevel(value) : value;
+    },
   };
 }
 
@@ -58,6 +67,8 @@ export interface ClashIndex {
   filters: Record<string, Map<string, string[]>>;
   options: Record<string, string[]>;
   searchText: Map<string, string>;
+  levels: Record<LevelSource, Map<string, string[]>>;
+  levelOptions: Record<LevelSource, string[]>;
 }
 
 function emptyIndex(filterDefs: RuntimeFilterDef[]): ClashIndex {
@@ -68,6 +79,8 @@ function emptyIndex(filterDefs: RuntimeFilterDef[]): ClashIndex {
     filters: Object.fromEntries(filterDefs.map((d) => [d.key, new Map<string, string[]>()])),
     options: Object.fromEntries(filterDefs.map((d) => [d.key, []])),
     searchText: new Map(),
+    levels: { primary: new Map(), a: new Map(), b: new Map(), either: new Map() },
+    levelOptions: { primary: [], a: [], b: [], either: [] },
   };
 }
 
@@ -78,7 +91,8 @@ function addToIndex(map: Map<string, string[]>, value: string | undefined, id: s
   else map.set(value, [id]);
 }
 
-function buildSearchText(c: Clash) {
+export function buildSearchText(c: Clash) {
+  if (c.searchText !== undefined) return c.searchText;
   return [
     c.name,
     c.test,
@@ -106,6 +120,50 @@ function buildSearchText(c: Clash) {
     .toLowerCase();
 }
 
+/** Single-pass historical filtering, without building ten inverted indexes. */
+export function compileClashFilter(config: ProjectConfig, filters: FilterState) {
+  const active = buildFilterDefs(config).flatMap((def) => {
+    const value = filters[def.key];
+    if (value === undefined || value === "" || value === "__all__") return [];
+    return [
+      {
+        def,
+        values: new Set(
+          (Array.isArray(value) ? value : [value]).map((v) =>
+            def.key === "nivel" ? (normalizeLevel(v) ?? v) : v,
+          ),
+        ),
+      },
+    ];
+  });
+  const search = filters.search?.trim().toLowerCase();
+  return (clash: Clash) => {
+    for (const { def, values } of active) {
+      if (def.key === "nivel") {
+        const primary = normalizeLevel(clash.filterValues?.nivel || clash.nivel);
+        const a = normalizeLevel(clash.items[0].nivel),
+          b = normalizeLevel(clash.items[1].nivel);
+        const source = filters.nivelSource ?? "either";
+        const levels =
+          source === "a"
+            ? [a]
+            : source === "b"
+              ? [b]
+              : source === "primary"
+                ? [primary]
+                : a || b
+                  ? [a, b].filter(Boolean)
+                  : [primary];
+        if (!levels.some((level) => values.has(level ?? MISSING_LEVEL))) return false;
+      } else {
+        const value = def.get(clash);
+        if (!value || !values.has(value)) return false;
+      }
+    }
+    return !search || buildSearchText(clash).includes(search);
+  };
+}
+
 export function buildClashIndex(clashes: Clash[], config: ProjectConfig): ClashIndex {
   const filterDefs = buildFilterDefs(config);
   if (clashes.length === 0) return emptyIndex(filterDefs);
@@ -116,12 +174,33 @@ export function buildClashIndex(clashes: Clash[], config: ProjectConfig): ClashI
   const byId = new Map<string, Clash>();
   const searchText = new Map<string, string>();
   const allIds: string[] = [];
+  const levels: ClashIndex["levels"] = {
+    primary: new Map(),
+    a: new Map(),
+    b: new Map(),
+    either: new Map(),
+  };
 
   for (const clash of clashes) {
-    byId.set(clash.id, clash);
-    allIds.push(clash.id);
-    searchText.set(clash.id, buildSearchText(clash));
-    for (const def of filterDefs) addToIndex(filters[def.key], def.get(clash), clash.id);
+    const identity = clashIdentity(clash);
+    byId.set(identity, clash);
+    allIds.push(identity);
+    searchText.set(identity, buildSearchText(clash));
+    for (const def of filterDefs) addToIndex(filters[def.key], def.get(clash), identity);
+    const primary = normalizeLevel(clash.filterValues?.nivel || clash.nivel);
+    const a = normalizeLevel(clash.items[0].nivel);
+    const b = normalizeLevel(clash.items[1].nivel);
+    const either = [...new Set([a, b].filter((level): level is string => Boolean(level)))];
+    if (!either.length && primary) either.push(primary);
+    const values: Record<LevelSource, string[]> = {
+      primary: [primary ?? MISSING_LEVEL],
+      a: [a ?? MISSING_LEVEL],
+      b: [b ?? MISSING_LEVEL],
+      either: either.length ? either : [MISSING_LEVEL],
+    };
+    for (const source of Object.keys(levels) as LevelSource[]) {
+      for (const level of values[source]) addToIndex(levels[source], level, identity);
+    }
   }
 
   const options = Object.fromEntries(
@@ -131,13 +210,33 @@ export function buildClashIndex(clashes: Clash[], config: ProjectConfig): ClashI
     ]),
   ) as ClashIndex["options"];
 
-  return { byId, allIds, filterDefs, filters, options, searchText };
+  const optionsFor = (buckets: ClashIndex["levels"]) =>
+    Object.fromEntries(
+      (Object.keys(buckets) as LevelSource[]).map((source) => [
+        source,
+        [...buckets[source].keys()].sort((a, b) => a.localeCompare(b, "es", { numeric: true })),
+      ]),
+    ) as ClashIndex["levelOptions"];
+  return {
+    byId,
+    allIds,
+    filterDefs,
+    filters,
+    options,
+    searchText,
+    levels,
+    levelOptions: optionsFor(levels),
+  };
 }
 
 function selectedFilterEntries(index: ClashIndex, filters: FilterState) {
   return index.filterDefs
     .map((d) => [d.key, filters[d.key]] as const)
-    .filter(([, value]) => value && value !== "__all__");
+    .filter(
+      (entry): entry is readonly [string, string | string[]] =>
+        entry[1] !== undefined && entry[1] !== "" && entry[1] !== "__all__",
+    )
+    .map(([key, value]) => [key, Array.isArray(value) ? value : [value]] as const);
 }
 
 function materialize(index: ClashIndex, ids: string[]) {
@@ -151,22 +250,26 @@ function materialize(index: ClashIndex, ids: string[]) {
 
 export function queryClashes(index: ClashIndex, filters: FilterState): Clash[] {
   const active = selectedFilterEntries(index, filters);
+  const candidates = active.map(([key, values]) => {
+    const buckets =
+      key === "nivel" ? index.levels[filters.nivelSource ?? "either"] : index.filters[key];
+    // OR within one field; the intersection below applies AND between fields.
+    return new Set(
+      values.flatMap((value) => {
+        const normalized = key === "nivel" ? (normalizeLevel(value) ?? value) : value;
+        return buckets.get(normalized) ?? [];
+      }),
+    );
+  });
   let ids: string[];
 
-  if (active.length === 0) {
+  if (candidates.length === 0) {
     ids = index.allIds;
   } else {
-    active.sort((a, b) => {
-      const aLen = index.filters[a[0]].get(a[1]!)?.length ?? 0;
-      const bLen = index.filters[b[0]].get(b[1]!)?.length ?? 0;
-      return aLen - bLen;
-    });
-    const [firstKey, firstValue] = active[0];
-    ids = index.filters[firstKey].get(firstValue!) ?? [];
-    for (let i = 1; i < active.length; i += 1) {
-      const [key, value] = active[i];
-      const allowed = new Set(index.filters[key].get(value!) ?? []);
-      ids = ids.filter((id) => allowed.has(id));
+    candidates.sort((a, b) => a.size - b.size);
+    ids = [...candidates[0]];
+    for (let i = 1; i < candidates.length; i += 1) {
+      ids = ids.filter((id) => candidates[i].has(id));
       if (ids.length === 0) break;
     }
   }
@@ -201,7 +304,7 @@ export function summarizeClashes(clashes: Clash[]): ClashMetrics {
   };
   let distance = 0;
   for (const c of clashes) {
-    if (c.status === "active") metrics.pending += 1;
+    if (c.status === "active" || c.status === "reviewed") metrics.pending += 1;
     else metrics.resolved += 1;
     if (c.severity === "alta") metrics.alta += 1;
     if (c.items[0].elementId && c.items[0].elementId !== "sin ID") metrics.withElementId += 1;

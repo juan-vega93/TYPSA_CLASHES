@@ -85,7 +85,7 @@ function toCsv(rows: Clash[], overrides: Record<string, ClashOverride>): string 
         o.note ?? "",
       ]
         .map(esc)
-        .join(",")
+        .join(","),
     );
   }
   return lines.join("\n");
@@ -136,12 +136,22 @@ const GestionRow = memo(function GestionRow({
           {clash.severity}
         </span>
       </td>
-      <td className="px-3 py-2 text-right font-mono tabular-nums">
-        {clash.distance.toFixed(3)} m
+      <td className="px-3 py-2 text-right font-mono tabular-nums">{clash.distance.toFixed(3)} m</td>
+      <td className="max-w-[260px] truncate px-3 py-2 font-medium">
+        {clash.name}
+        {clash.kind === "group" && (
+          <span
+            className="ml-2 rounded bg-muted px-1 text-[10px] text-muted-foreground"
+            title="Grupo de Navisworks, contado como un resultado igual que en su resumen"
+          >
+            Grupo
+          </span>
+        )}
       </td>
-      <td className="max-w-[260px] truncate px-3 py-2 font-medium">{clash.name}</td>
       <td className="max-w-[180px] truncate px-3 py-2 text-muted-foreground">{clash.test}</td>
-      <td className="max-w-[160px] truncate px-3 py-2 text-muted-foreground">{clash.zona ?? "-"}</td>
+      <td className="max-w-[160px] truncate px-3 py-2 text-muted-foreground">
+        {clash.zona ?? "-"}
+      </td>
       <td className="px-3 py-2 text-muted-foreground">{clash.nivel ?? "-"}</td>
       <td className="px-3 py-2">
         <div className="text-[11px] font-mono text-muted-foreground">
@@ -229,7 +239,10 @@ export function GestionTab({
       }
     >
       <div className="overflow-x-auto rounded-lg border">
-        <div className="max-h-[560px] overflow-y-auto" onScroll={(e) => setScrollTop(e.currentTarget.scrollTop)}>
+        <div
+          className="max-h-[560px] overflow-y-auto"
+          onScroll={(e) => setScrollTop(e.currentTarget.scrollTop)}
+        >
           <table className="w-full min-w-[1200px] table-fixed text-xs">
             <thead className="sticky top-0 z-10 bg-muted/95 text-[11px] uppercase tracking-wider text-muted-foreground">
               <tr>
