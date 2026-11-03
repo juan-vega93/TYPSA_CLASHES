@@ -325,6 +325,7 @@ const { commitmentBreakdown, testSpecialties, breakdownSvg } = await mod(
   "src/lib/commitment-breakdown.ts",
 );
 const { planEvolution, evolutionReportPages } = await mod("src/lib/plan-evolution.ts");
+const { createWeeklyReplan, weeklyReplanSchedule } = await mod("src/lib/weekly-replan.ts");
 const originalRows = Array.from({ length: 14 }, (_, i) => row(`original-${i}`));
 const evolvedRows = [
   ...originalRows.map((r, i) => (i < 5 ? { ...r, status: "resolved" } : r)),
@@ -395,6 +396,35 @@ assert.equal(
   undefined,
   "Manual entry leaves the original object untouched",
 );
+const reprogram = createWeeklyReplan(
+  evolutionPlan.id,
+  evolutionResult.rows.map((row) => ({ date: row.date, closed: row.closed })),
+  evolutionResult.latest.pending,
+  "2026-12-31",
+  true,
+);
+const futureControl = weeklyReplanSchedule(reprogram)[0].date;
+reprogram.actuals[futureControl] = 7;
+const reprogrammedEvolution = planEvolution(
+  evolutionPlan,
+  evolutionCuts,
+  DEFAULT_PROJECT_CONFIG,
+  "manual",
+  evolutionResult.rows,
+  reprogram,
+);
+assert.equal(
+  reprogrammedEvolution.manualPoints[1].value,
+  5,
+  "Past XML resolution remains at the anchor, not zero",
+);
+assert.equal(reprogrammedEvolution.manualPoints.at(-1).value, 7);
+assert.ok(reprogrammedEvolution.svg.includes("Metas futuras desde 2026-10-23"));
+assert.equal(weeklyReplanSchedule(reprogram).at(-1).target, 20);
+const programPages = evolutionReportPages(evolutionPlan, reprogrammedEvolution);
+assert.equal(programPages.length, 2);
+assert.ok(programPages[1].includes("METAS FUTURAS DESDE EL CORTE"));
+assert.ok(programPages[1].includes("Objetivo acumulado"));
 assert.equal(evolutionPages.length, 1);
 assert.ok(evolutionPages[0].includes("CURVA ORIGINAL, CARGA ADICIONAL Y CIERRES"));
 assert.ok(!evolutionPages[0].includes("PLAN DE RESOLUCIÓN · PLANEADO Y AVANCE REAL"));
@@ -413,7 +443,7 @@ if (process.argv.includes("--evolution-pdf")) {
   await fs.mkdir("tmp/pdfs", { recursive: true });
   await fs.writeFile(
     "tmp/pdfs/evolution-verification.pdf",
-    await svgPagesPdf(manualPages, {
+    await svgPagesPdf(programPages, {
       createCanvas,
       loadSvg: (svg) => loadImage(Buffer.from(svg)),
     }),

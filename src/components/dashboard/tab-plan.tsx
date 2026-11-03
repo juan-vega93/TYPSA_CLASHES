@@ -22,6 +22,13 @@ import { downloadFile, svgGraphPng } from "@/lib/plan-export";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Panel } from "./panel";
+import { WeeklyReplanPanel } from "./weekly-replan-panel";
+import {
+  createWeeklyReplan,
+  validWeeklyReplans,
+  weeklyReplanErrors,
+  type WeeklyReplan,
+} from "@/lib/weekly-replan";
 const number = (value: number) => value.toLocaleString("es-PE");
 export function PlanTab({
   clashes,
@@ -53,6 +60,8 @@ export function PlanTab({
     [],
     validPlanList,
   );
+  const replans = useStoredState<WeeklyReplan[]>("typsa-weekly-replans-v1", [], validWeeklyReplans);
+  const [replanId, setReplanId] = useState("");
   const [activeId, setActiveId] = useState(initialPlanId ?? ""),
     [source, setSource] = useState("priority"),
     [title, setTitle] = useState("Levantamiento de interferencias prioritarias"),
@@ -101,6 +110,11 @@ export function PlanTab({
     stored.value.find((plan) => plan.id === activeId) ??
     (activeId === "" && !request ? stored.value.at(-1) : undefined);
   const schedule = useMemo(() => (active ? coordinationSchedule(active) : []), [active]);
+  const availableReplans = replans.value.filter((version) => version.planId === active?.id);
+  const selectedReplan =
+    replanId === "none"
+      ? undefined
+      : (availableReplans.find((version) => version.id === replanId) ?? availableReplans.at(-1));
   const baseIds = active?.baseIds,
     baseKeys = active?.baseKeys,
     baseRules = active?.rules,
@@ -134,16 +148,69 @@ export function PlanTab({
   const evolution = useMemo(() => {
     if (!active || !evolutionHistory) return undefined;
     if (!evolutionHistory.rows) return { error: evolutionHistory.error };
+    if (selectedReplan) {
+      const anchor = evolutionHistory.rows.find((row) => row.date === selectedReplan.anchorDate);
+      if (
+        !anchor ||
+        anchor.closed !== selectedReplan.anchorClosed ||
+        anchor.pending !== selectedReplan.pending
+      )
+        return {
+          error:
+            "El corte de esta programación no está disponible o cambió su balance. Amplía el período o crea otra versión desde el corte visible; las metas guardadas se conservan.",
+        };
+    }
     return {
-      ...planEvolution(active, snapshots, config, progressSource, evolutionHistory.rows),
+      ...planEvolution(
+        active,
+        snapshots,
+        config,
+        progressSource,
+        evolutionHistory.rows,
+        selectedReplan,
+      ),
       error: "",
     };
-  }, [active, snapshots, config, progressSource, evolutionHistory]);
-  const errors = active ? planErrors(active) : [];
+  }, [active, snapshots, config, progressSource, evolutionHistory, selectedReplan]);
+  const errors = selectedReplan
+    ? weeklyReplanErrors(selectedReplan)
+    : active
+      ? planErrors(active)
+      : [];
   const patch = (change: (plan: CoordinationPlan) => CoordinationPlan) => {
     if (active)
       stored.update((plans) => plans.map((plan) => (plan.id === active.id ? change(plan) : plan)));
   };
+  function createReplan(targetDate: string, distribute: boolean) {
+    if (!active || !evolutionHistory?.rows?.length) return;
+    try {
+      const version = createWeeklyReplan(
+        active.id,
+        evolutionHistory.rows.map((row) => ({ date: row.date, closed: row.closed })),
+        evolutionHistory.rows.at(-1)!.pending,
+        targetDate,
+        distribute,
+      );
+      replans.update((versions) => [...versions, version]);
+      setReplanId(version.id);
+      setProgressSource("manual");
+      setError("");
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "No se pudo reprogramar.");
+    }
+  }
+  async function restoreReplans(file: File) {
+    try {
+      const data: unknown = JSON.parse(await file.text());
+      if (!validWeeklyReplans(data)) throw Error("El respaldo no contiene programaciones válidas.");
+      replans.update((versions) => [
+        ...new Map([...versions, ...data].map((version) => [version.id, version])).values(),
+      ]);
+      setError("");
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "No se pudo recuperar el respaldo.");
+    }
+  }
   function create() {
     try {
       const plan = createCoordinationPlan(
@@ -252,7 +319,7 @@ export function PlanTab({
       setError(reason instanceof Error ? reason.message : "No se pudo recuperar el respaldo");
     }
   }
-  if (loading || !stored.ready)
+  if (loading || !stored.ready || !replans.ready)
     return (
       <Panel title="Plan de resolución">
         <p>Preparando datos y planes guardados…</p>
@@ -350,12 +417,12 @@ export function PlanTab({
           borras los datos del sitio.
         </p>
       </Panel>
-      {(error || stored.error) && (
+      {(error || stored.error || replans.error) && (
         <p
           role="alert"
           className="rounded border border-destructive/30 bg-destructive/10 p-3 text-sm"
         >
-          {error || stored.error}
+          {error || stored.error || replans.error}
         </p>
       )}
       <Panel title="Planes guardados">
@@ -413,7 +480,7 @@ export function PlanTab({
         <>
           <Panel
             title="Curva original y carga actualizada"
-            subtitle={`Base fija del ${active.cutDate}: ${number(active.baseCount)} clashes. Gris: plan original · naranja: carga actualizada · verde: avance de la fuente elegida.`}
+            subtitle={`Base fija del ${active.cutDate}: ${number(active.baseCount)} clashes. Gris: plan original · ${selectedReplan ? "morado: metas futuras desde el corte" : "naranja: referencia con carga adicional"} · verde: avance real.`}
           >
             {historyLoading ? (
               <p>Calculando el período seleccionado…</p>
@@ -426,7 +493,11 @@ export function PlanTab({
                     value={progressSource}
                     onChange={(e) => setProgressSource(e.target.value as "manual" | "xml")}
                   >
-                    <option value="manual">Avance manual de la base</option>
+                    <option value="manual">
+                      {selectedReplan
+                        ? "Historial XML + avance futuro manual"
+                        : "Avance manual de la base"}
+                    </option>
                     <option value="xml">Cierres acumulados según XML</option>
                   </select>
                 </label>
@@ -451,10 +522,9 @@ export function PlanTab({
                   <strong>{number(evolution.latest!.pending)}</strong> pendientes.
                 </p>
                 <p className="mb-3 text-xs text-muted-foreground">
-                  La curva naranja sube al incorporar entradas y baja por otras salidas. Continúa la
-                  forma del plan original con la carga conocida hasta el último corte; no promete
-                  que esa carga adicional se cierre en la misma fecha. Los valores que registres en
-                  la tabla de abajo se dibujan al elegir «Avance manual».
+                  {selectedReplan
+                    ? `La curva morada parte de ${number(selectedReplan.anchorClosed)} cierres al ${selectedReplan.anchorDate} y suma tus metas futuras. La verde conserva el historial y añade los avances reales que registres, sin confundir metas con cierres.`
+                    : "La naranja es una referencia de carga, no una nueva promesa. Usa Reprogramar desde el corte para distribuir el pendiente y dibujar tus metas futuras desde el avance alcanzado."}
                 </p>
                 <details>
                   <summary className="cursor-pointer text-sm">
@@ -502,6 +572,7 @@ export function PlanTab({
                 <Button
                   className="mt-3"
                   variant="outline"
+                  disabled={busy || !!errors.length}
                   onClick={() =>
                     downloadFile("evolucion-linea-base.svg", evolution.svg!, "image/svg+xml")
                   }
@@ -531,96 +602,116 @@ export function PlanTab({
               </p>
             )}
           </Panel>
-          <Panel
-            right={
-              <Button variant="outline" disabled={busy || errors.length > 0} onClick={exportCsv}>
-                Exportar metas y avance CSV
-              </Button>
-            }
-            title="Metas semanales y avance real"
-            subtitle="Introduce cierres acumulados verificados de la base. La curva superior se actualiza al elegir Avance manual; una celda vacía significa sin registro."
-          >
-            {errors.length > 0 && (
-              <div
-                role="alert"
-                className="mb-3 rounded border border-destructive/30 bg-destructive/10 p-3 text-sm"
-              >
-                {errors.map((message) => (
-                  <p key={message}>{message}</p>
-                ))}
-              </div>
-            )}
-            <div className="overflow-auto">
-              <table className="w-full min-w-[720px] text-sm">
-                <thead>
-                  <tr className="border-b text-left">
-                    <th className="p-2">Control</th>
-                    <th>Meta período</th>
-                    <th>Planeado acumulado</th>
-                    <th>Avance real acumulado</th>
-                    <th>Desviación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {schedule.map((row, index) => (
-                    <tr key={row.date} className="border-b">
-                      <td className="p-2">{row.date}</td>
-                      <td>
-                        <Input
-                          aria-label={`Meta ${row.date}`}
-                          className="my-1 w-28"
-                          type="number"
-                          step={1}
-                          min={0}
-                          disabled={index === 0}
-                          value={row.weekly}
-                          onChange={(e) => {
-                            const value = Number(e.target.value);
-                            if (Number.isInteger(value) && value >= 0)
-                              patch((plan) => ({
-                                ...plan,
-                                goals: { ...plan.goals, [row.date]: value },
-                              }));
-                          }}
-                        />
-                      </td>
-                      <td>{number(row.cumulative)}</td>
-                      <td>
-                        <Input
-                          aria-label={`Avance real ${row.date}`}
-                          className="my-1 w-36"
-                          placeholder="Sin registrar"
-                          type="number"
-                          min={0}
-                          max={active.baseCount}
-                          step={1}
-                          value={row.actual ?? ""}
-                          onChange={(e) => {
-                            const text = e.target.value,
-                              value = Number(text);
-                            if (text !== "" && (!Number.isInteger(value) || value < 0)) return;
-                            setProgressSource("manual");
-                            patch((plan) => {
-                              const actuals = { ...plan.actuals };
-                              if (text === "") delete actuals[row.date];
-                              else actuals[row.date] = value;
-                              return { ...plan, actuals };
-                            });
-                          }}
-                        />
-                      </td>
-                      <td>{row.deviation === null ? "—" : number(row.deviation)}</td>
-                    </tr>
+          {evolutionHistory?.rows?.at(-1) && (
+            <WeeklyReplanPanel
+              key={active.id}
+              versions={availableReplans}
+              selected={selectedReplan}
+              anchor={evolutionHistory.rows.at(-1)!}
+              endDate={active.endDate}
+              onSelect={setReplanId}
+              onCreate={createReplan}
+              onManual={() => setProgressSource("manual")}
+              onUpdate={(version) =>
+                replans.update((versions) =>
+                  versions.map((current) => (current.id === version.id ? version : current)),
+                )
+              }
+              onRestore={(file) => void restoreReplans(file)}
+            />
+          )}
+          {!evolutionHistory?.rows && (
+            <Panel
+              right={
+                <Button variant="outline" disabled={busy || errors.length > 0} onClick={exportCsv}>
+                  Exportar metas y avance CSV
+                </Button>
+              }
+              title="Metas semanales y avance real"
+              subtitle="Introduce cierres acumulados verificados de la base. La curva superior se actualiza al elegir Avance manual; una celda vacía significa sin registro."
+            >
+              {errors.length > 0 && (
+                <div
+                  role="alert"
+                  className="mb-3 rounded border border-destructive/30 bg-destructive/10 p-3 text-sm"
+                >
+                  {errors.map((message) => (
+                    <p key={message}>{message}</p>
                   ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-3 text-xs text-muted-foreground">
-              Las metas deben sumar la base guardada. Los avances deben ser acumulados, no
-              decrecientes y menores o iguales a esa base. Un cambio de alcance requiere otra línea
-              base para conservar el historial.
-            </p>
-          </Panel>
+                </div>
+              )}
+              <div className="overflow-auto">
+                <table className="w-full min-w-[720px] text-sm">
+                  <thead>
+                    <tr className="border-b text-left">
+                      <th className="p-2">Control</th>
+                      <th>Meta período</th>
+                      <th>Planeado acumulado</th>
+                      <th>Avance real acumulado</th>
+                      <th>Desviación</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {schedule.map((row, index) => (
+                      <tr key={row.date} className="border-b">
+                        <td className="p-2">{row.date}</td>
+                        <td>
+                          <Input
+                            aria-label={`Meta ${row.date}`}
+                            className="my-1 w-28"
+                            type="number"
+                            step={1}
+                            min={0}
+                            disabled={index === 0}
+                            value={row.weekly}
+                            onChange={(e) => {
+                              const value = Number(e.target.value);
+                              if (Number.isInteger(value) && value >= 0)
+                                patch((plan) => ({
+                                  ...plan,
+                                  goals: { ...plan.goals, [row.date]: value },
+                                }));
+                            }}
+                          />
+                        </td>
+                        <td>{number(row.cumulative)}</td>
+                        <td>
+                          <Input
+                            aria-label={`Avance real ${row.date}`}
+                            className="my-1 w-36"
+                            placeholder="Sin registrar"
+                            type="number"
+                            min={0}
+                            max={active.baseCount}
+                            step={1}
+                            value={row.actual ?? ""}
+                            onChange={(e) => {
+                              const text = e.target.value,
+                                value = Number(text);
+                              if (text !== "" && (!Number.isInteger(value) || value < 0)) return;
+                              setProgressSource("manual");
+                              patch((plan) => {
+                                const actuals = { ...plan.actuals };
+                                if (text === "") delete actuals[row.date];
+                                else actuals[row.date] = value;
+                                return { ...plan, actuals };
+                              });
+                            }}
+                          />
+                        </td>
+                        <td>{row.deviation === null ? "—" : number(row.deviation)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Las metas deben sumar la base guardada. Los avances deben ser acumulados, no
+                decrecientes y menores o iguales a esa base. Un cambio de alcance requiere otra
+                línea base para conservar el historial.
+              </p>
+            </Panel>
+          )}
         </>
       )}
     </div>

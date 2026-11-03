@@ -88,3 +88,13 @@ El parser prepara los campos configurados una vez por XML y usa una consulta ind
 Al final de Resumen, «Lecturas complementarias» permite mostrar u ocultar el circular con los cuatro estados XML y las barras de severidad de pendientes. Las cantidades y porcentajes se calculan sobre el alcance filtrado; estado usa el total de resultados y severidad usa el total pendiente. Cada color tiene leyenda con cantidad y porcentaje, y los filtros vacíos muestran un mensaje sin inventar resultados. Los contadores se acumulan en la misma pasada de executiveSummary.
 
 El ranking existente admite «Prioritarios pendientes» o «Total de clashes». Este último ordena por total y separa abiertos de resueltos/aprobados; no se agrega otro ranking repetido. Zona y otros campos continúan como segmentaciones opcionales con cobertura de datos exportados.
+
+## Metas futuras desde el corte actual
+
+«Programar el pendiente desde el corte actual» crea versiones independientes en typsa-weekly-replans-v1. Guarda el historial de cierres XML acumulados, el corte de arranque, los pendientes y la fecha objetivo. No modifica la línea base original ni reinicia el avance en cero. El reparto uniforme inicial es opcional; cada meta futura es editable. El acumulado objetivo suma esas metas a los cierres del corte, mientras el acumulado real futuro es manual y separado. Las filas pasadas se muestran como XML de solo lectura, sin inventar metas históricas.
+
+La curva morada reemplaza la referencia naranja mientras se muestra una programación: arranca en el avance del corte y suma los compromisos futuros. La gris conserva la base original y la verde combina historial XML con el avance manual futuro, o muestra solo XML si el usuario elige esa fuente. La suma de metas debe igualar el pendiente guardado; se muestra lo que falta asignar o el exceso. Los avances futuros deben ser acumulados no decrecientes desde el ancla, hasta el total de cierres objetivo. Un borrador incompleto se conserva, pero sus exportaciones de reporte se bloquean hasta corregirlo.
+
+Al llegar otro corte, la versión anterior conserva su referencia. El usuario puede crear otra versión desde el nuevo corte, sin borrar la anterior. Si el corte de una programación no está en el período, o su balance cambió, no se dibuja una comparación engañosa: se pide ampliar el período o generar otra versión. Las nuevas entradas futuras no se presuponen. Las programaciones se respaldan y recuperan en JSON por separado del respaldo de líneas base.
+
+El PDF de evolución incluye la curva seleccionada y una tabla adicional de metas, objetivo acumulado, avance manual y desviación. Las metas y los cambios del avance no vuelven a conciliar los clashes históricos.
