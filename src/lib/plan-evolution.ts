@@ -132,16 +132,23 @@ export function planEvolution(
     },
     {
       name: replan
-        ? `Metas futuras desde ${replan.anchorDate} (editables)`
+        ? "Carga actualizada (referencia)"
         : "Referencia ajustada por entradas y otras salidas (no es una nueva promesa)",
-      color: replan ? "#7c3aed" : "#d97706",
-      points: replan
-        ? [
-            { date: replan.anchorDate, value: replan.anchorClosed },
-            ...future.map((row) => ({ date: row.date, value: row.target })),
-          ]
-        : adjusted,
+      color: "#d97706",
+      points: adjusted,
     },
+    ...(replan
+      ? [
+          {
+            name: `Metas futuras desde ${replan.anchorDate} (editables)`,
+            color: "#7c3aed",
+            points: [
+              { date: replan.anchorDate, value: replan.anchorClosed },
+              ...future.map((row) => ({ date: row.date, value: row.target })),
+            ],
+          },
+        ]
+      : []),
     {
       name:
         progressSource === "xml"

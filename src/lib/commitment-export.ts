@@ -53,6 +53,9 @@ export function lineChart(title: string, series: Series[]) {
     ),
   ];
   const step = Math.max(1, Math.ceil(dates.length / 8));
+  const legendColumns = series.length > 3 ? 2 : 1;
+  const legendX = (i: number) => 85 + (i % legendColumns) * 540;
+  const legendY = (i: number) => 442 + Math.floor(i / legendColumns) * 20;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-label="${esc(title)}"><rect width="100%" height="100%" fill="white"/><g font-family="Arial, sans-serif" fill="#203b43"><text x="560" y="35" font-size="21" text-anchor="middle" font-weight="bold">${esc(title)}</text>${ticks.map((v) => `<line x1="85" x2="1085" y1="${y(v)}" y2="${y(v)}" stroke="#dce4e7"/><text x="75" y="${y(v) + 5}" font-size="14" text-anchor="end">${v.toLocaleString("es-PE")}</text>`).join("")}${dates
     .filter((d, i) => i === dates.length - 1 || (i % step === 0 && x(dates.at(-1)!) - x(d) > 75))
     .map(
@@ -61,7 +64,7 @@ export function lineChart(title: string, series: Series[]) {
     )
     .join(
       "",
-    )}${series.map((s) => `<polyline points="${s.points.map((p) => `${x(p.date)},${y(p.value)}`).join(" ")}" fill="none" stroke="${s.color}" stroke-width="3" ${s.dashed ? 'stroke-dasharray="8 5"' : ""}/>${s.points.map((p) => `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3" fill="${s.color}"/>`).join("")}`).join("")}${series.map((s, i) => `<line x1="85" x2="120" y1="${442 + i * 20}" y2="${442 + i * 20}" stroke="${s.color}" stroke-width="3" ${s.dashed ? 'stroke-dasharray="8 5"' : ""}/><text x="130" y="${447 + i * 20}" font-size="14">${esc(s.name)}</text>`).join("")}</g></svg>`;
+    )}${series.map((s) => `<polyline points="${s.points.map((p) => `${x(p.date)},${y(p.value)}`).join(" ")}" fill="none" stroke="${s.color}" stroke-width="3" ${s.dashed ? 'stroke-dasharray="8 5"' : ""}/>${s.points.map((p) => `<circle cx="${x(p.date)}" cy="${y(p.value)}" r="3" fill="${s.color}"/>`).join("")}`).join("")}${series.map((s, i) => `<line x1="${legendX(i)}" x2="${legendX(i) + 35}" y1="${legendY(i)}" y2="${legendY(i)}" stroke="${s.color}" stroke-width="3" ${s.dashed ? 'stroke-dasharray="8 5"' : ""}/><text x="${legendX(i) + 45}" y="${legendY(i) + 5}" font-size="14">${esc(s.name)}</text>`).join("")}</g></svg>`;
 }
 export const CONTROL_GRAPH_LABELS = {
   summary: "Resumen ejecutivo",

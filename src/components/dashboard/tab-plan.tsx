@@ -480,7 +480,7 @@ export function PlanTab({
         <>
           <Panel
             title="Curva original y carga actualizada"
-            subtitle={`Base fija del ${active.cutDate}: ${number(active.baseCount)} clashes. Gris: plan original · ${selectedReplan ? "morado: metas futuras desde el corte" : "naranja: referencia con carga adicional"} · verde: avance real.`}
+            subtitle={`Base fija del ${active.cutDate}: ${number(active.baseCount)} clashes. Gris: plan original · naranja: carga actualizada${selectedReplan ? " · morado: metas futuras desde el corte" : ""} · verde: avance real.`}
           >
             {historyLoading ? (
               <p>Calculando el período seleccionado…</p>

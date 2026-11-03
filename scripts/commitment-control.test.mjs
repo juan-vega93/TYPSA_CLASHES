@@ -420,6 +420,10 @@ assert.equal(
 );
 assert.equal(reprogrammedEvolution.manualPoints.at(-1).value, 7);
 assert.ok(reprogrammedEvolution.svg.includes("Metas futuras desde 2026-10-23"));
+assert.ok(reprogrammedEvolution.svg.includes("Carga actualizada (referencia)"));
+assert.ok(reprogrammedEvolution.svg.includes('stroke="#d97706"'));
+assert.equal((reprogrammedEvolution.svg.match(/<polyline /g) ?? []).length, 4);
+assert.equal((evolutionResult.svg.match(/<polyline /g) ?? []).length, 3);
 assert.equal(weeklyReplanSchedule(reprogram).at(-1).target, 20);
 const programPages = evolutionReportPages(evolutionPlan, reprogrammedEvolution);
 assert.equal(programPages.length, 2);
