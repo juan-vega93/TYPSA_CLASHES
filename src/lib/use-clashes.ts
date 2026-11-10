@@ -4,6 +4,7 @@ import type { ClashWorkerRequest, ClashWorkerResponse } from "./clash-worker";
 import type { ProjectConfig } from "./project-config";
 import { mergeTestUpdates } from "./clash-updates";
 import { compactClash } from "./compact-clash";
+import { fetchClashXml } from "./fetch-clash-xml";
 import {
   discoverSnapshotFolders,
   foldersInRange,
@@ -56,11 +57,7 @@ export function useClashes(config: ProjectConfig, historyRange?: HistoryRange) {
         for (const file of files)
           try {
             let xml = file.xml;
-            if (xml === undefined && file.url) {
-              const response = await fetch(file.url);
-              if (!response.ok) throw Error(`No se pudo descargar el XML (${response.status})`);
-              xml = await response.text();
-            }
+            if (xml === undefined && file.url) xml = await fetchClashXml(file.url);
             if (xml === undefined) throw Error("Falta el contenido XML");
             result.clashes.push(
               ...parseClashXml(xml, file.name, config).map((c) => ({

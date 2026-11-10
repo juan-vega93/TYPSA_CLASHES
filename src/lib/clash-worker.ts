@@ -2,6 +2,7 @@ import { parseClashXml } from "./clash-parser";
 import type { Clash } from "./clash-types";
 import type { ProjectConfig } from "./project-config";
 import { compactClash } from "./compact-clash";
+import { fetchClashXml } from "./fetch-clash-xml";
 
 export type ClashWorkerRequest = {
   id: number;
@@ -30,11 +31,7 @@ self.onmessage = async (event: MessageEvent<ClashWorkerRequest>) => {
   for (const file of files) {
     try {
       let xml = file.xml;
-      if (xml === undefined && file.url) {
-        const response = await fetch(file.url);
-        if (!response.ok) throw Error(`No se pudo descargar el XML (${response.status})`);
-        xml = await response.text();
-      }
+      if (xml === undefined && file.url) xml = await fetchClashXml(file.url);
       if (xml === undefined) throw Error("Falta el contenido XML");
       const parsed = parseClashXml(xml, file.name.replace(/\.xml$/i, ""), config);
       clashes.push(

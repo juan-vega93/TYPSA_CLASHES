@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
+import { gzipSync } from "node:zlib";
 import { rolldown } from "rolldown";
 async function mod(input) {
   const bundle = await rolldown({
@@ -147,6 +148,23 @@ await globalThis.self.onmessage({
 });
 assert.equal(response.clashes.length, 1);
 assert.equal(response.clashes[0].items[0].raw, undefined);
+const plainClashes = response.clashes;
+globalThis.fetch = async () => new Response(gzipSync(xml));
+await globalThis.self.onmessage({
+  data: {
+    id: 3,
+    files: [{ name: "test", url: "/fixture.xml.gz" }],
+    compact: true,
+    config: DEFAULT_PROJECT_CONFIG,
+  },
+});
+assert.deepEqual(response.errors, []);
+// The fixture has no exported date; the parser supplies the time of each read.
+assert.deepEqual(
+  response.clashes.map(({ createdAt: _createdAt, ...clash }) => clash),
+  plainClashes.map(({ createdAt: _createdAt, ...clash }) => clash),
+);
+globalThis.fetch = async () => new Response("", { status: 404 });
 await globalThis.self.onmessage({
   data: {
     id: 2,
